@@ -1,52 +1,589 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="PKU-en(B) : ">
+<link rel="shortcut icon" href="./favicon.ico" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="./pku57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./pku72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./pku114.png" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<!-- Bootstrap core CSS file -->
+<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
 
-    <title>PKU-en(B)</title>
-  </head>
+<!-- Icomoon font icon library -->
+<!-- <link rel="stylesheet" href="./bower_components/icomoon/style.css"> -->
 
-  <body>
+<!-- theme CSS file -->
+<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/bennychia/pku-en_b">View on GitHub</a>
+<!-- custom CSS file -->
+<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-custom.css">
 
-          <h1 id="project_title">PKU-en(B)</h1>
-          <h2 id="project_tagline"></h2>
+<!-- jQuery file (before bootstrap.min.js) -->
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/bennychia/pku-en_b/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/bennychia/pku-en_b/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<!-- bttrlazyloading file -->
+<!-- <link rel="stylesheet" href="./bower_components/jquery/plugin/bttrlazyloading.min.css"> -->
+
+<!-- Bootstrap core JavaScript file -->
+<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- bttrlazyloading JavaScript file -->
+<!-- <script src="./bower_components/jquery/plugin/jquery.bttrlazyloading.min.js"></script> -->
+
+<!-- imgLiquid JavaScript file -->
+<script src="./bower_components/jquery/plugin/imgLiquid-min.js"></script>
+
+<!-- jquery.lazyload JavaScript file -->
+<script src="./bower_components/jquery/plugin/jquery.lazyload.js"></script>
+
+<script type="text/javascript">
+document.createElement('header');
+document.createElement('footer');
+document.createElement('nav');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+</script>
+
+<title>Peking University</title>
+</head>
+
+<body>
+
+<div class="container-fluid e_container_navwrap">
+
+<!-- navigation inc/_nav.html -->
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+      <div class="add-nav tx_times">
+        <ul class="clearfix">
+        <li><a href="./">Home</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">简体中文</a></li>
+        </ul>
+      </div>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="pku-enb" class="anchor" href="#pku-enb"><span class="octicon octicon-link"></span></a>PKU-en(B)</h1>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-<p>Website of Peking University (English version)</p>
-      </section>
-    </div>
+      <ul class="nav navbar-nav navbar-right e_nav_mainnav">
+        <li class="active"><a href="#">About PKU</a></li>
+        <li><a href="#">Admission</a></li>
+        <li><a href="./list.html">News</a></li>
+        <li><a href="#">Academics & Research</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Administration</a></li>
+        <li><a href="#">Schools & Departments</a></li>
+        <li><a href="#">Employment</a></li>
+      </ul>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">PKU-en(B) maintained by <a href="https://github.com/bennychia">bennychia</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+      <!-- e_nav_info1 support mobile devices -->
+      <style>
+      .glyphicon-chevron-right{
+        -webkit-transition:all .1s ease-in-out;
+      }
+      .open .glyphicon-chevron-right{
+        -webkit-transform:rotate(90deg);
+      }
+      </style>
+      <ul class="nav navbar-nav navbar-right e_nav_info1">
+        <li class="divider"></li>
+        <li>
+          <a class="dropdown-toggle small" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-chevron-right"></span> Information for</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Faculty/Staff</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Vistor</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- e_nav_info2 support tablet & desktop -->
+      <ul class="nav navbar-nav navbar-right e_nav_info2 tx_times">
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Faculty/Staff</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Vistor</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control e_input_search" placeholder="">
+        </div><button type="submit" class="btn btn-default e_btn_search tx_times">Search</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- /navigation -->
 
-    
+</div>
 
-  </body>
+<div class="container">
+
+	<div class="row">
+		<div class="col-sm-16">
+
+		<!-- logo inc/_logo.html -->
+		<div class="m_logo">
+	<div class="c1">
+		<a href="./" title="Peking University"><img class="logo" src="bower_components/bootstrap/assets/images/logo.png" alt="Peking University" /></a>
+	</div>
+</div>
+		<!-- /logo -->
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-16">
+			<div class="slide-c1">
+
+			<!-- slide-big inc/_slide-big.html -->
+			<div class="m_slide e_slide-big f_infoimg_wrap">
+	<div class="pic">
+		<a class="lk" href="###"><img class="lazy img-responsive" data-original="./bower_components/bootstrap/assets/images/slide-big.jpg" alt="" /></a>
+	</div>
+	<a class="info f_infoimg" href="###">
+		<span class="h3 tx_times">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+		<span class="p info_time c_tx3">BEIJING, May 4</span>
+		<span class="p hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+	</a>
+</div>
+			<!-- /slide-big -->
+
+			</div>
+			<div class="slide-c2">
+
+			<!-- tabs inc/_tabs.html -->
+			<div class="m_tabs hidden-xs hidden-sm">
+	<ul class="clearfix">
+	<li class="item">
+		<a href="###" class="lk"><span class="txt">About PKU</span></a>
+	</li>
+	<li class="item">
+		<a href="###" class="lk"><span class="txt">Admission</span></a>
+	</li>
+	<li class="item">
+		<a href="./list.html" class="lk"><span class="txt">News</span></a>
+	</li>
+	<li class="item">
+		<a href="###" class="lk"><span class="txt">Acdemics & Research</span></a>
+	</li>
+	<li class="item">
+		<a href="###" class="lk"><span class="txt">Events</span></a>
+	</li>
+	<li class="item">
+		<a href="###" class="lk"><span class="txt">Administration</span></a>
+	</li>
+	<li class="item">
+		<a href="###" class="lk"><span class="txt">Schools & Departments</span></a>
+	</li>
+	<li class="item">
+		<a href="###" class="lk"><span class="txt">Employment</span></a>
+	</li>
+	</ul>
+</div>
+			<!-- /tabs -->
+
+			<!-- slide-small inc/_slide-small.html -->
+			<div class="m_slide-group">
+	<ul class="slide-list clearfix">
+	<li class="slide1">
+		<div class="m_slide e_slide-small f_infoimg_wrap imgLiquidFill imgLiquid">
+			<div class="pic">
+				<a class="lk" href="###"><img src="./bower_components/bootstrap/assets/images/slide-small1.jpg" alt="" /></a>
+			</div>
+			<a class="info tx_times f_infoimg" href="###">
+				<span class="t">Campus</span>
+				<span class="p hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+			</a>
+		</div>
+	</li>
+	<li class="slide2">
+		<div class="m_slide e_slide-small f_infoimg_wrap imgLiquidFill imgLiquid">
+			<div class="pic">
+				<a class="lk" href="###"><img src="./bower_components/bootstrap/assets/images/slide-small2.jpg" alt="" /></a>
+			</div>
+			<a class="info tx_times f_infoimg" href="###">
+				<span class="t">People</span>
+				<span class="p hidden-xs">Lorem ipsum dolor sit amet. </span>
+			</a>
+		</div>
+	</li>
+	<li class="slide3">
+		<div class="m_slide e_slide-small f_infoimg_wrap imgLiquidFill imgLiquid">
+			<div class="pic">
+				<a class="lk" href="###"><img src="./bower_components/bootstrap/assets/images/slide-small3.jpg" alt="" /></a>
+			</div>
+			<a class="info tx_times f_infoimg" href="###">
+				<span class="t">Events</span>
+				<span class="p hidden-xs">Lorem ipsum dolor sit amet. </span>
+			</a>
+		</div>
+	</li>
+	<li class="slide4">
+		<div class="m_slide e_slide-small f_infoimg_wrap imgLiquidFill imgLiquid">
+			<div class="pic">
+				<a class="lk" href="###"><img src="./bower_components/bootstrap/assets/images/slide-small4.jpg" alt="" /></a>
+			</div>
+			<a class="info tx_times f_infoimg" href="###">
+				<span class="t">Focus</span>
+				<span class="p hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+			</a>
+		</div>
+	</li>
+	</ul>
+</div>
+			<!-- /slide-small -->
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-16 col-md-10">
+
+			<div class="headline">
+				<h2>NEWS</h2>
+				<div class="rt">
+					<a href="###">All News</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-8">
+
+				<!-- news-pic inc/_news-pic.html -->
+				<div class="content">
+	<div>
+		<a class="dis_b vt_t" href="###"><img class="lazy img-responsive" data-original="./bower_components/bootstrap/assets/images/news-pic.jpg" alt="" /></a>
+		<p class="mt10 tx_-1 c_tx6"><span class="tx_verd">MAY</span> 10, 2014</p>
+		<h3 class="m0 mt20 pt5 tx_1 tx_n tx_geor tx_lh12"><a href="###">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h3>
+		<p class="para mt20 c_tx4 tx_geor tx_lh17">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+	</div>
+	<div class="pt15">
+		<a href="###" class="btn_simple1 tx_geor"><i>Read More</i></a>
+	</div>
+</div>
+				<!-- /news-pic -->
+
+				</div>
+				<div class="col-sm-8">
+
+				<!-- news-txt inc/_news-txt.html -->
+				<ul class="news-txt">
+<li class="item">
+	<div class="content">
+	<p class="mb5 c_tx6"><span class="tx_verd">JUNE</span> 10, 2014</p>
+	<div class="para tx_geor tx_lh17"><a href="###">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="content">
+	<p class="mb5 c_tx6"><span class="tx_verd">JUNE</span> 10, 2014</p>
+	<div class="para tx_geor tx_lh17"><a href="###">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="content">
+	<p class="mb5 c_tx6"><span class="tx_verd">JUNE</span> 10, 2014</p>
+	<div class="para tx_geor tx_lh17"><a href="###">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </a></div>
+	</div>
+</li>
+<li class="item">
+	<div class="content">
+	<p class="mb5 c_tx6"><span class="tx_verd">JUNE</span> 10, 2014</p>
+	<div class="para tx_geor tx_lh17"><a href="###">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></div>
+	</div>
+</li>
+</ul>
+				<!-- /news-txt -->
+
+				</div>
+			</div>
+
+		</div>
+		<div class="col-sm-16 col-md-6">
+
+			<div class="headline">
+				<h2>Events</h2>
+				<div class="rt">
+					<a href="###">All Events</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-16">
+
+				<!-- events inc/_events.html -->
+				<div class="content pb0">
+	<ul class="events-lst">
+	<li class="item pt0 clearfix cur"><!-- current item add class 'cur' -->
+		<div class="c1">
+			<span class="tx_verd">JUN</span><br />
+			<span class="tx_verd">05</span>
+		</div>
+		<div class="c2">
+			<div class="para tx_times"><a href="###">[Symphony Concert] Lorem ipsum dolor sit amet</a></div>
+			<div class="tx_geor tx_-1"><i class="c_tx7">8:30 a.m</i></div>
+		</div>
+	</li>
+	<li class="item clearfix">
+		<div class="c1">
+			<span class="tx_verd">DEC</span><br />
+			<span class="tx_verd">06</span>
+		</div>
+		<div class="c2">
+			<div class="para tx_times"><a href="###">[Concert] Lorem ipsum dolor</a></div>
+			<div class="tx_geor tx_-1"><i class="c_tx7">8:30 a.m</i></div>
+		</div>
+	</li>
+	<li class="item clearfix">
+		<div class="c1">
+			<span class="tx_verd">NOV</span><br />
+			<span class="tx_verd">07</span>
+		</div>
+		<div class="c2">
+			<div class="para tx_times"><a href="###">[Concert] Lorem ipsum dolor sit amet</a></div>
+			<div class="tx_geor tx_-1"><i class="c_tx7">8:30 a.m</i></div>
+		</div>
+	</li>
+	<li class="item clearfix">
+		<div class="c1">
+			<span class="tx_verd">OCT</span><br />
+			<span class="tx_verd">08</span>
+		</div>
+		<div class="c2">
+			<div class="para tx_times"><a href="###">[Concert] Lorem ipsum dolor sit amet</a></div>
+			<div class="tx_geor tx_-1"><i class="c_tx7">8:30 a.m</i></div>
+		</div>
+	</li>
+	</ul>
+</div>
+				<!-- /events -->
+
+				<!-- information inc/_information.html -->
+				<div class="m_information">
+	<ul class="clearfix">
+	<li class="item">
+		<div class="ico_information ico_students"><i></i></div>
+		<div class="desc">
+			<div class="c1">
+				<div class="ico_information_s ico_students_s"></div>
+				<div class="project">Overseas<br />Students</div>
+			</div>
+			<div class="c2"><a href="###">Enter <span class="glyphicon glyphicon-play"></span></a></div>
+		</div>
+	</li>
+	<li class="item">
+		<div class="ico_information ico_newsletter"><i></i></div>
+		<div class="desc">
+			<div class="c1">
+				<div class="ico_information_s ico_newsletter_s"></div>
+				<div class="project">PKU<br />Newsletter</div>
+			</div>
+			<div class="c2"><a href="###">Enter <span class="glyphicon glyphicon-play"></span></a></div>
+		</div>
+	</li>
+	<li class="item last">
+		<div class="ico_information ico_mooc"><i></i></div>
+		<div class="desc">
+			<div class="c1">
+				<div class="ico_information_s ico_mooc_s"></div>
+				<div class="project">Peking<br />University<br />Class</div>
+			</div>
+			<div class="c2"><a href="###">Edx <span class="glyphicon glyphicon-play"></span></a>&nbsp;&nbsp;<a href="###">Coursera <span class="glyphicon glyphicon-play"></span></a></div>
+		</div>
+	</li>
+	</ul>
+</div>
+				<!-- /information -->
+					
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+<div class="container-fluid e_container_recommend">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-16">
+
+			<!-- recommend inc/_recommend.html -->
+			<div class="m_recommend clearfix">
+	<div class="item e_item_1">
+		<span class="bor"></span>
+		<div class="static">
+			<div class="tit tx_times">People</div>
+			<div class="pic imgLiquidFill imgLiquid"><a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-1.jpg" alt="" /></a></div>
+			<div class="msg para mt15 tx_times">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+			<div class="mt15 tx_-1 c_tx3">Peking University, May 13, 2014</div>
+		</div>
+		<div class="zoom-pic imgLiquidFill imgLiquid">
+			<a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-1.jpg" alt="" /></a>
+		</div>
+		<div class="dock-msg">
+			<div class="msg tx_times tx_-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+		</div>
+	</div>
+	<div class="item e_item_2">
+		<div class="static">
+			<span class="bor"></span>
+			<div class="tit tx_times">Research</div>
+			<div class="pic imgLiquidFill imgLiquid"><a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-2.jpg" alt="" /></a></div>
+			<div class="msg para mt15 tx_times">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+			<div class="mt15 tx_-1 c_tx3">Peking University, May 13, 2014</div>
+		</div>
+		<div class="zoom-pic imgLiquidFill imgLiquid">
+			<a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-2.jpg" alt="" /></a>
+		</div>
+		<div class="dock-msg">
+			<div class="msg tx_times tx_-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+		</div>
+	</div>
+	<div class="item e_item_3">
+		<div class="static">
+			<span class="bor"></span>
+			<div class="tit tx_times">Focus</div>
+			<div class="pic imgLiquidFill imgLiquid"><a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-3.jpg" alt="" /></a></div>
+			<div class="msg para mt15 tx_times">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+			<div class="mt15 tx_-1 c_tx3">Peking University, May 13, 2014</div>
+		</div>
+		<div class="zoom-pic imgLiquidFill imgLiquid">
+			<a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-3.jpg" alt="" /></a>
+		</div>
+		<div class="dock-msg">
+			<div class="msg tx_times tx_-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+		</div>
+	</div>
+	<div class="item e_item_4">
+		<div class="static">
+			<span class="bor"></span>
+			<div class="tit tx_times">Campus</div>
+			<div class="pic imgLiquidFill imgLiquid"><a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-4.jpg" alt="" /></a></div>
+			<div class="msg para mt15 tx_times">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+			<div class="mt15 tx_-1 c_tx3">Peking University, November 13, 2014</div>
+		</div>
+		<div class="zoom-pic imgLiquidFill imgLiquid">
+			<a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-4.jpg" alt="" /></a>
+		</div>
+		<div class="dock-msg">
+			<div class="msg tx_times tx_-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+		</div>
+	</div>
+	<div class="item e_item_5">
+		<div class="static">
+			<span class="bor"></span>
+			<div class="tit tx_times">Media</div>
+			<div class="pic imgLiquidFill imgLiquid"><a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-5.jpg" alt="" /></a></div>
+			<div class="msg para mt15 tx_times">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+			<div class="mt15 tx_-1 c_tx3">Peking University, May 13, 2014</div>
+		</div>
+		<div class="zoom-pic imgLiquidFill imgLiquid">
+			<a href="###"><img src="./bower_components/bootstrap/assets/images/recommend-5.jpg" alt="" /></a>
+		</div>
+		<div class="dock-msg">
+			<div class="msg tx_times tx_-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+		</div>
+	</div>
+</div>
+			<!-- /recommend -->
+				
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-xs-16 col-sm-9 hidden-xs">
+
+			<!-- foot-logo inc/_foot-logo.html -->
+			<div class="m_foot-logo">
+	<img class="logo" src="bower_components/bootstrap/assets/images/logo.png" alt="Peking University" />
+</div>
+			<!-- /foot-logo -->
+			
+		</div>
+		<div class="col-xs-16 col-sm-7">
+
+			<!-- foot-copyright inc/_foot-copyright.html -->
+			<div class="m_foot-copyright">
+	<div class="social-plat">
+		<ul class="clearfix">
+		<li class="item">
+			<a href="###" class="lk"><i class="ico_plat ico_snwb"></i></a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk"><i class="ico_plat ico_txwb"></i></a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk"><i class="ico_plat ico_wechat"></i></a>
+		</li>
+		</ul>
+	</div>
+	<div class="tx_-1 tx_geor tx_lh12 c_tx4">
+		&copy; 2014 Peking University<br />Peking University, No.5 Yiheyuan Road Haidian District, Beijing, P.R.China 100871<br />webmaster@pku.edu.cn
+	</div>
+</div>
+			<!-- /foot-copyright -->
+			
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-16">
+
+			<!-- foot-bottom inc/_foot-bottom.html -->
+			<div class="m_foot-bottom clearfix">
+	<div class="group">
+		<a href="###">Health Science Center</a>
+		<span class="dot"></span>
+		<a href="###">Library</a>
+		<span class="dot"></span>
+		<a href="###">Giving to PKU</a>
+	</div>
+	<div class="group">
+		<a href="###">Sitemap</a>
+		<span class="dot"></span>
+		<a href="###">About Us</a>
+		<span class="dot"></span>
+		<a href="###">简体中文</a>
+	</div>
+</div>
+			<!-- /foot-bottom -->
+
+		</div>
+	</div>
+	
+</div>
+
+<!-- footer inc/_footer.html -->
+<!-- custom JavaScript file -->
+<script src="./bower_components/bootstrap/dist/js/bootstrap-custom.js"></script>
+
+</body>
 </html>
+<!-- /footer -->
