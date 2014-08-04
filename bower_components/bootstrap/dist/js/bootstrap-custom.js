@@ -2,40 +2,6 @@
 // Domain: http://english.pku.edu.cn
 // Author: bienfantaisie#gmail.com
 
-// image text slider
-function fn_infoimg(){
-	var $infoimg_wrap = $('.f_infoimg_wrap');
-
-	$infoimg_wrap.each(function(){
-
-		var $infoimg = $(this).children('.f_infoimg'),
-			speed = 400;
-
-		if(!$infoimg.is(':animated')){
-
-			var infoimg_h = $infoimg.height(),
-				infoimg_mg = $infoimg.css('marginTop').slice(1,-2),
-				infoimg_ex = infoimg_h - infoimg_mg;
-
-			$infoimg.css({
-				'bottom' : - infoimg_ex + 'px',
-				'visibility' : 'visible'
-			});
-
-			$(this).hover(function(){
-				$infoimg.stop().animate({
-					'bottom' : 0
-				},speed);
-			},function(){
-				$infoimg.stop().animate({
-					'bottom' : - infoimg_ex + 'px'
-				},speed);
-			});
-		}
-
-	});
-}
-
 // responsive image
 function fn_fitimg(){
 
@@ -133,13 +99,6 @@ function instantLoad(){
 	fn_dockMsg();
 
 	var doc_w = document.body.clientWidth;
-
-	if(doc_w >= 768){
-
-		// image text slider
-		fn_infoimg();
-
-	}
 
 	if(doc_w >= 992){
 

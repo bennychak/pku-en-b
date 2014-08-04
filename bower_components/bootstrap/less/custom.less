@@ -37,13 +37,13 @@
 // navbar
 .navbar{min-height:38px; border:none;}
 .e_container_navwrap{padding-left:0; padding-right:0}
-.e_input_search{ height:38px; border-radius:0; border:none; background:#dcdcdc}
+.e_input_search{ height:38px; border-radius:0; border:none; background:#808080; color:#fff}
 .e_btn_search{ border:none; border-radius:0; text-shadow:none; padding-top:9px; padding-bottom:9px;}
 .e_btn_search,
 .e_btn_search:hover,
 .e_btn_search:focus,
 .e_btn_search:active,
-.e_btn_search:visited{ background:#900000; color:#fff}
+.e_btn_search:visited{ background:#00366f; color:#fff}
 
 .e_nav_mainnav,
 .e_nav_info1{}
@@ -61,58 +61,50 @@
 .add-nav .active a{ background:#000; color:#fff}
 
 // logo
-.m_logo{ margin-bottom:10px; padding-left:10px; padding-right:10px}
+.m_logo{ margin-bottom:10px;}
 .m_logo .c1{ text-align:center;}
 .m_logo .logo{ width:285px; height:89px}
+.m_logo .c2{ display:none; float:right; text-align:right; padding-top:55px; font-size:.875em}
+.m_logo .c2 a{ margin-left:12px}
+.m_logo .c2 a:link,
+.m_logo .c2 a:hover,
+.m_logo .c2 a:active,
+.m_logo .c2 a:visited{ color:#000}
 
 // slide
-.slide-c1,
-.slide-c2{ float:left; width:100%}
+.e_container_slide{ height:384px; background:#003670 url(../../assets/images/slide-bg.png) center center no-repeat;}
 
-.m_slide-group{ margin-top:6px}
-.slide-list,
-.slide-list li{ list-style:none; padding:0; margin:0}
-.slide-list li{ float:left; overflow:hidden;}
+.m_slide{ background:rgba(0,0,0,.3) url(../../assets/images/slide-bg.png) center center no-repeat}
+.m_slide a:link,
+.m_slide a:hover,
+.m_slide a:active,
+.m_slide a:visited{ color:#fff}
+.m_slide .slide-c1{ float:left; width:210px;}
+.m_slide .slide_tabs{ padding:22px 0 0 27px; color:#fff}
+.m_slide .slide_tabs ul,
+.m_slide .slide_tabs .item{ margin:0; padding:0; list-style:none;}
+.m_slide .slide_tabs .item{ margin-bottom:6px; text-indent:-5px}
+.m_slide .slide_tabs .item:hover{ list-style:square;}
+.m_slide .slide_tabs .item .lk{ display:block}
 
-.m_slide{ position: relative; overflow:hidden}
-.m_slide a:hover{ text-decoration:none}
+.m_slide .slide-c2{ width:890px; overflow:hidden}
+.m_slide .slide_big{ position:relative; width:680px; float:left}
+.m_slide .slide_big .pic{ cursor:pointer;}
+.m_slide .slide_big .pic .info{ position:absolute; left:0; bottom:0; width:100%; height:88px; padding-top:50px;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.6))); /* Saf4+, Chrome */
+background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.6)); /* Chrome 10+, Saf5.1+ */
+background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.6)); /* FF3.6+ */
+background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.6)); /* IE10 */
+background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.6)); /* Opera 11.10+ */
+background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.6)); /* W3C */
+}
+.m_slide .slide_big .pic .info .c1{ padding-left:24px; font-size:1.125em}
 
-.m_slide .pic{ height:100%; overflow:hidden}
-.m_slide .pic .lk{ display:block; overflow:hidden; max-width:100%;}
-
-.m_slide .info{ display:block; width:100%; background:#000; color:#fff}
-.m_slide .info .h3,
-.m_slide .info .p{ display:block; padding:0 3%}
-.m_slide .info .h3{ width:100%; overflow:hidden; line-height:1em; padding-top:5px; margin-bottom:10px}
-.m_slide .info .t{ padding-top:5px; padding-bottom:5px;}
-.m_slide .info .p{ padding-bottom:10px; font-size:12px}
-
-.e_slide-big .pic img{ display:block; width:100%}
-
-.e_slide-big .info{}
-.e_slide-big .info .h3{ line-height:1.7em; margin-top:0; margin-bottom:0; font-size:16px; font-weight:normal;}
-
-.e_slide-small{ overflow:hidden;}
-
-.e_slide-small .pic{ height:100px}
-
-.e_slide-small .info{}
-.e_slide-small .info .p{ padding:7px 10px; font-size:14px}
-.e_slide-small .info .t{ display:block; width:70px; padding-left:10px; border-left-width:6px; border-left-style:solid; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; font-size:14px; font-weight:800}
-
-.slide2,
-.slide3{ width:33%}
-.slide1,
-.slide4{ width:67%}
-.slide1 .e_slide-small{ margin:0 6px 6px 0}
-.slide2 .e_slide-small{ margin-bottom:6px}
-.slide3 .e_slide-small{ margin-right:6px}
-.slide4 .e_slide-small{}
-
-.slide1 .e_slide-small .info .t,
-.slide3 .e_slide-small .info .t{ border-left-color:#e8b149}
-.slide2 .e_slide-small .info .t,
-.slide4 .e_slide-small .info .t{ border-left-color:#4d6989}
+.m_slide .slide_group{ overflow:hidden}
+.m_slide .slide_group ul,
+.m_slide .slide_group li{ margin:0; padding:0}
+.m_slide .slide_group .item img{ width:130px; height:128px; vertical-align:middle;}
+.m_slide .slide_group .item .info{ width:80px; text-align:center; font-size:.875em; vertical-align:middle}
 
 // tabs
 .m_tabs{ padding-left:4%; height:@tabs_h;}
@@ -130,9 +122,9 @@
 .content{ padding-top:25px; padding-bottom:25px}
 
 // headline
-.headline{ border-bottom:#900000 2px solid; padding:25px 0 5px 15px;}
-.headline h2{ float:left; margin:0; padding-bottom:5px; font-family:Times New Roman,serif; font-size:21px; color:#000; font-weight:normal;}
-.headline .rt{ float:right; padding-top:5px; font-size:.875em; font-family:Times New Roman,serif;}
+.headline{ border-bottom:#8e0000 2px solid; padding:25px 0 5px;}
+.headline h2{ float:left; margin:0; padding-bottom:3px; font-size:1.125em; color:#000; font-weight:normal; text-transform:uppercase;}
+.headline .rt{ float:right; font-size:.875em; font-family:Times New Roman,serif;}
 .headline .rt a{ color:#333;}
 
 // content
@@ -492,7 +484,8 @@ body{}
 body{}
 
 // logo
-.m_logo .c1{ text-align:left;}
+.m_logo .c1{ float:left; text-align:left;}
+.m_logo .c2{ display:block;}
 
 // navbar
 .navbar{ border-radius:0; background:#000}
@@ -565,6 +558,7 @@ body{}
 @tabs_h: 116px;
 
 body{}
+.container{ width:1118px}
 
 // tabs
 .m_tabs{ height:@tabs_h}
@@ -585,32 +579,6 @@ body{}
 .m_recommend .e_item_5 .bor{ display:none}
 
 .m_recommend .item .zoom-pic{}
-
-// banner
-.m_banner{ height:@tabs_h;}
-
-}
-
-// big-screen desktop >= 1300px
-//------------------------------------------
-
-@media (min-width: 1300px) {
-
-// var
-@tabs_h: 117px;
-
-body{}
-
-.container{ width:1298px}
-
-// tabs
-.m_tabs{ height:@tabs_h}
-
-.e_tabs_btm{ height:auto}
-
-// slide
-.e_slide-big .pic img{ height:415px}
-.e_slide-small{ height:146px}
 
 // banner
 .m_banner{ height:@tabs_h;}
