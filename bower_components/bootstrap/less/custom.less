@@ -197,47 +197,19 @@
 .ico_mooc_s{ background-position:-52px 0}
 
 // recommend
-.e_container_recommend{ position:relative; min-height:300px; background:#ececec; border-top:#dcdcdc 1px solid; border-bottom:#a9a9a9 7px solid}
+.e_container_recommend{ position:relative; background:#033872; border-top:#fff 82px solid; border-bottom:#368577 8px solid}
 .e_container_recommend .container{ position:relative; padding-left:0; padding-right:0}
 
 .m_recommend{}
-.m_recommend .item{ position:relative; float:left; width:50%; margin-top:7px; border-bottom:#ddd 1px solid}
-.m_recommend .item .bor{ position:absolute; right:0; bottom:0; top:5%; height:90%; width:1px; font-size:0; overflow:hidden; background:#ddd;}
-.m_recommend .item:nth-child(2n) .bor{ display:none}
-.m_recommend .item .static{ padding:0 10px 0 9px; height:340px; overflow:hidden;}
-.m_recommend .item .tit{ padding-top:25px; height:62px}
-.m_recommend .e_item_1 .tit{ color:#368777}
-.m_recommend .e_item_2 .tit{ color:#6a9418}
-.m_recommend .e_item_3 .tit{ color:#e26c00}
-.m_recommend .e_item_4 .tit{ color:#d1983e}
-.m_recommend .e_item_5 .tit{ color:#9c7c52}
-.m_recommend .item .pic{ height:110px; overflow:hidden;}
-.m_recommend .item .msg{}
-
-.m_recommend .item .zoom-pic{ opacity:0; position:absolute; top:0; left:0; width:100%; height:172px; overflow:hidden}
-.m_recommend .item .dock-msg{ position:absolute; bottom:-7px; left:0; width:100%; height:7px; overflow:hidden;}
-.m_recommend .e_item_1 .dock-msg{ background:#368777}
-.m_recommend .e_item_2 .dock-msg{ background:#6a9418}
-.m_recommend .e_item_3 .dock-msg{ background:#e26c00}
-.m_recommend .e_item_4 .dock-msg{ background:#d1983e}
-.m_recommend .e_item_5 .dock-msg{ background:#9c7c52}
-.m_recommend .item .dock-msg .msg{ padding:15px 19px 0; color:#fff}
-
-// recommend_btm
-.e_container_add{}
-
-.m_recommend_btm{ background:#fff;}
-.m_recommend_btm .item{ float:left; width:50%; padding:15px 0; border-bottom:#ddd 1px solid}
-.m_recommend_btm .item:last-child{ border-bottom:none}
-.m_recommend_btm .item .static{ padding:0 10px; overflow:hidden; border-right:#c2c2c2 1px dashed}
-.m_recommend_btm .item:nth-child(2n) .static{ border-right:none}
-.m_recommend_btm .item .tit{ display:inline-block; vertical-align:top; line-height:23px; font-size:.875em; padding:0 7px; color:#fff}
-.m_recommend_btm .e_item_1 .tit{ background:#368777}
-.m_recommend_btm .e_item_2 .tit{ background:#6a9418}
-.m_recommend_btm .e_item_3 .tit{ background:#e26c00}
-.m_recommend_btm .e_item_4 .tit{ background:#d1983e}
-.m_recommend_btm .e_item_5 .tit{ background:#9c7c52}
-.m_recommend_btm .item .msg{ height:80px; overflow:hidden}
+.m_recommend .item{ float:left; width:50%}
+.m_recommend .item_bd{ position:relative; overflow:hidden; width:95px; height:82px; margin:0 auto}
+.m_recommend .item .pic img{ width:95px; height:82px}
+.m_recommend .item .static{ position:absolute; left:0; width:100%; top:0}
+.m_recommend .item .pcover{ display:block; position:absolute; width:95px; height:82px; left:0; top:0;
+	background-image:url(../../assets/images/pcover.png); background-size:191px 82px; background-repeat:no-repeat; background-position:0 0;
+}
+.m_recommend .e_item_1{ margin-top:-41px}
+.m_recommend .e_item_1 .pcover{ background-position:-96px 0}
 
 // foot
 .m_foot-logo{ padding:24px 10px; text-align:center;}
@@ -386,6 +358,9 @@
 body{}
 .f_infoimg{ visibility:hidden}
 
+// logo
+.m_logo .c1{ float:left; text-align:left;}
+
 // slide
 .e_container_slide,
 .e_container_slide .container{ padding-left:9px; padding-right:9px}
@@ -423,18 +398,6 @@ body{}
 
 // recommend
 .m_recommend{}
-.m_recommend .item{ width:33%}
-.m_recommend .item .static{ height:320px; padding:0 20px 0 19px;}
-.m_recommend .item:nth-child(2n) .bor{ display:block}
-.m_recommend .item:nth-child(3n) .bor{ display:none}
-
-// recommend_btm
-.m_recommend_btm{}
-.m_recommend_btm .item{ width:20%; height:170px; border-bottom:none}
-.m_recommend_btm .item .static{ padding:0 10%; overflow:hidden; border-right:#c2c2c2 1px dashed}
-.m_recommend_btm .item:nth-child(2n) .static{ border-right:#c2c2c2 1px dashed}
-.m_recommend_btm .item:last-child .static{ border-right:none}
-.m_recommend_btm .item .msg{ margin-bottom:5px}
 
 // foot
 .m_foot-logo{ text-align:left;}
@@ -479,7 +442,7 @@ body{}
 body{}
 
 // logo
-.m_logo .c1{ float:left; text-align:left;}
+.m_logo .c1{}
 .m_logo .c2{ display:block;}
 
 // navbar
@@ -580,12 +543,6 @@ body{}
 
 // recommend
 .m_recommend{}
-.m_recommend .item{ width:20%; margin-top:0; border-bottom:none}
-.m_recommend .item .bor{ top:0}
-.m_recommend .item:nth-child(3n) .bor{ display:block}
-.m_recommend .e_item_5 .bor{ display:none}
-
-.m_recommend .item .zoom-pic{}
 
 // banner
 .m_banner{ height:@tabs_h;}

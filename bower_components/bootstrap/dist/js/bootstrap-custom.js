@@ -51,34 +51,6 @@ function fn_fitimg(){
 
 }
 
-// dockMsg
-function fn_dockMsg(){
-	// dock-msg's height
-	var $_reco = $('.m_recommend .item');
-	$_reco.each(function(){
-		var reco_h = $(this).height(),
-			pic_h = $('.zoom-pic',this).height(),
-			offset_btm = $('.dock-msg',this).css('bottom').slice(0,-2),
-			speed = 350;
-
-		$(this).hover(function(){
-			$('.zoom-pic',this).stop().animate({
-				'opacity' : 1
-			},speed);
-			$('.dock-msg',this).stop().animate({
-				'height' : reco_h - pic_h - offset_btm + 'px'
-			},speed);
-		},function(){
-			$('.zoom-pic',this).stop().animate({
-				'opacity' : 0
-			},speed);
-			$('.dock-msg',this).stop().animate({
-				'height' : - offset_btm + 'px'
-			},speed);
-		});
-	});
-}
-
 // main & side compare height
 function comHeight(){
 	$('.f_main,.f_side').height('auto');
@@ -94,9 +66,6 @@ function comHeight(){
 function instantLoad(){
 	// responsive image
 	// fn_fitimg();
-
-	// dock-msg's height
-	fn_dockMsg();
 
 	var doc_w = document.body.clientWidth;
 
