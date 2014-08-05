@@ -201,15 +201,27 @@
 .e_container_recommend .container{ position:relative; padding-left:0; padding-right:0}
 
 .m_recommend{}
-.m_recommend .item{ float:left; width:50%}
-.m_recommend .item_bd{ position:relative; overflow:hidden; width:95px; height:82px; margin:0 auto}
+.m_recommend .item{ width:50%; float:left; text-align:center; color:#fff;}
+.m_recommend .item_bd{ position:relative; overflow:hidden; width:95px; height:82px;}
 .m_recommend .item .pic img{ width:95px; height:82px}
-.m_recommend .item .static{ position:absolute; left:0; width:100%; top:0}
+.m_recommend .item .static{ position:absolute; left:0; width:100%; height:82px; top:0; padding-top:41px;}
+.m_recommend .item .static .tit{ font-size:6px}
+.m_recommend .item .static .msg{ font-size:5px; font-family:Georgia,serif; font-style:italic;}
+.m_recommend .item .dock-msg{ display:none}
 .m_recommend .item .pcover{ display:block; position:absolute; width:95px; height:82px; left:0; top:0;
 	background-image:url(../../assets/images/pcover.png); background-size:191px 82px; background-repeat:no-repeat; background-position:0 0;
 }
-.m_recommend .e_item_1{ margin-top:-41px}
-.m_recommend .e_item_1 .pcover{ background-position:-96px 0}
+.m_recommend .e_item_1,
+.m_recommend .e_item_2{ margin-top:-41px}
+.m_recommend .e_item_3{ width:100%;}
+.m_recommend .e_item_3,
+.m_recommend .e_item_4,
+.m_recommend .e_item_5{ margin-top:-20px}
+.m_recommend .e_item_3 .item_bd{ margin:0 auto}
+.m_recommend .e_item_2 .item_bd,
+.m_recommend .e_item_5 .item_bd{ float:right}
+.m_recommend .e_item_1 .pcover,
+.m_recommend .e_item_2 .pcover{ background-position:-96px 0}
 
 // foot
 .m_foot-logo{ padding:24px 10px; text-align:center;}
