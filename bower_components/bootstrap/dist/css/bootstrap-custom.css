@@ -495,6 +495,7 @@ a:visited,
 }
 .m_slide .slide_big .pic .info .c1,
 .m_slide .slide_big .pic .info .c2 {
+  display: block;
   padding: 0 10px;
 }
 .m_slide .slide_big .pic .info .c1 {
@@ -1456,6 +1457,7 @@ a:visited,
     min-height: 500px;
   }
   .e_content-wrap_btm .main {
+    width: 58%;
     min-height: 250px;
     border-bottom: none;
   }
@@ -1477,8 +1479,8 @@ a:visited,
     padding-bottom: 190px;
   }
   .e_content-wrap_btm .side {
+    width: 42%;
     border-top: none;
-    background: #dfdfdf;
   }
   .e_content-wrap_btm .side .side_bd {
     min-height: 250px;
