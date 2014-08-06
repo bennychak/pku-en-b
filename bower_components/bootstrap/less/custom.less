@@ -77,7 +77,8 @@
 .e_container_slide .container{ padding-left:0; padding-right:0}
 
 .m_slide .slide_big .pic .info,
-.m_slide .slide_group .item .info{
+.m_slide .slide_group .item .info,
+.m_recommend .item .pic:after{
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,.6))); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.6)); /* Chrome 10+, Saf5.1+ */
 	background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.6)); /* FF3.6+ */
@@ -197,17 +198,25 @@
 .ico_mooc_s{ background-position:-52px 0}
 
 // recommend
-.e_container_recommend{ position:relative; background:#033872; padding-bottom:5px; border-top:#fff 41px solid; border-bottom:#368577 8px solid}
+.e_container_recommend{ position:relative; background:#033872; border-top:#fff 41px solid; border-bottom:#368577 8px solid}
 .e_container_recommend .container{ position:relative; padding-left:0; padding-right:0}
 
-.m_recommend{ max-width:450px; margin:0 auto}
-.m_recommend .item{ width:50%; float:left; text-align:center; color:#fff;}
+.m_recommend{ max-width:320px; margin:0 auto}
+.m_recommend .item{ width:50%; padding-bottom:10px; float:left; text-align:center; color:#fff;}
 .m_recommend .item_bd{ position:relative; overflow:hidden; width:95px; height:82px;}
 .m_recommend .item .pic img{ width:95px; height:82px}
-.m_recommend .item .static{ position:absolute; width:57px; left:19px; bottom:0; padding-bottom:16px;}
+.m_recommend .item .pic:after{ content:''; position:absolute; left:0; bottom:0; height:50%; width:100%}
+.m_recommend .item .static{ position:absolute; width:57px; left:19px; top:0; padding-top:36px;}
 .m_recommend .item .static .tit{ font-size:.75em}
 .m_recommend .item .static .msg{ display:none; font-size:.75em; font-family:Georgia,serif; font-style:italic;}
-.m_recommend .item .dock-msg{ display:none}
+.m_recommend .item .dock-msg{ display:none; opacity:0; position:absolute; left: 0; top:0; width:100%; height:100%;
+	-webkit-transition:opacity .2s ease-in-out;
+	-moz-transition:opacity .2s ease-in-out;
+	-o-transition:opacity .2s ease-in-out;
+	-ms-transition:opacity .2s ease-in-out;
+	transition:opacity .2s ease-in-out;
+}
+.m_recommend .item .dock-msg .msg{ font-family:Georgia,serif; font-style:italic; opacity:.7; padding:0 20px}
 .m_recommend .item .pcover{ display:block; position:absolute; width:95px; height:82px; left:0; top:0;
 	background-image:url(../../assets/images/pcover.png); background-size:191px 82px; background-repeat:no-repeat; background-position:0 0;
 }
@@ -411,16 +420,18 @@ body{}
 // recommend
 .e_container_recommend{ border-top-width:82px}
 
-.m_recommend{ max-width:950px}
+.m_recommend{ max-width:600px}
 .m_recommend .item{}
 .m_recommend .item_bd{ width:190px; height:162px;}
 .m_recommend .item .pic img{ width:190px; height:162px}
-.m_recommend .item .static{ width:114px; left:38px; padding-bottom:32px;}
+.m_recommend .item .static{ width:120px; left:35px; padding-top:78px}
 .m_recommend .item .static .tit{ font-size:1em}
-.m_recommend .item .static .msg{ display:block; font-size:1em;}
-.m_recommend .item .dock-msg{}
-.m_recommend .item .pcover{ width:190px; height:164px; background-size:382px 164px;
-}
+.m_recommend .item .static .msg{ display:block; font-size:.75em; opacity:.7}
+.m_recommend .item .dock-msg{ display:block; opacity:0}
+.m_recommend .item .dock-msg .tit{ padding:25px 0 10px; font-size:.9375em}
+.m_recommend .item .dock-msg .msg{ font-size:.875em}
+.m_recommend .item_bd:hover .dock-msg{ opacity:1;}
+.m_recommend .item .pcover{ width:190px; height:164px; background-size:382px 164px;}
 .m_recommend .e_item_1,
 .m_recommend .e_item_2{ margin-top:-82px}
 .m_recommend .e_item_3{}
@@ -433,6 +444,11 @@ body{}
 .m_recommend .e_item_1 .pcover,
 .m_recommend .e_item_2 .pcover{ background-position:-192px 0}
 
+.m_recommend .e_item_1 .item_bd .dock-msg{ background:#f2b75b}
+.m_recommend .e_item_2 .item_bd .dock-msg{ background:#2d7aca}
+.m_recommend .e_item_3 .item_bd .dock-msg{ background:#e06c00}
+.m_recommend .e_item_4 .item_bd .dock-msg{ background:#6a9218}
+.m_recommend .e_item_5 .item_bd .dock-msg{ background:#e06c00}
 
 
 
@@ -509,9 +525,11 @@ body{}
 .m_slide .slide_group{ width:210px}
 
 // recommend
-.m_recommend{}
+.m_recommend{ max-width:950px}
 .m_recommend .item{ width:20%;}
 .m_recommend .item .item_bd{ float:none; margin:0 auto}
+.m_recommend .item .static{}
+
 .m_recommend .e_item_1,
 .m_recommend .e_item_3,
 .m_recommend .e_item_5{ margin-top:-82px}
