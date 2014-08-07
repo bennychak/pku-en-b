@@ -1209,8 +1209,11 @@ a:visited,
   .news-txt {
     border-top: none;
   }
+  .news-txt .item {
+    min-height: 140px;
+  }
   .events-lst .item {
-    padding: 17px 8px;
+    padding: 20px 8px;
   }
   .events-lst .item .c1 {
     width: 70px;
