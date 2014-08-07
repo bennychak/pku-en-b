@@ -138,13 +138,13 @@ document.createElement('aside');
 
 </div>
 
-<div class="container">
+<div class="container e_container_content">
+<div class="row">
 
-	<div class="row">
-		<div class="col-sm-16">
+<div class="col-xs-16">
 
-		<!-- logo inc/_logo.html -->
-		<div class="m_logo clearfix">
+<!-- logo inc/_logo.html -->
+<div class="m_logo clearfix">
 	<div class="c1">
 		<a href="./" title="Peking University"><img class="logo" src="bower_components/bootstrap/assets/images/logo.png" alt="Peking University" /></a>
 	</div>
@@ -152,69 +152,47 @@ document.createElement('aside');
 		<a href="###">Sitemap</a><a href="###">About Us</a><a href="###">简体中文</a>
 	</div>
 </div>
-		<!-- /logo -->
-
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-16">
-			<div class="slide-c1">
-
-			<!-- slide-big inc/_banner.html -->
-			<div class="m_banner imgLiquidFill imgLiquid">
-	<img src="./bower_components/bootstrap/assets/images/banner.jpg" alt="" />
-</div>
-			<!-- /slide-big -->
-
-			</div>
-			<div class="slide-c2">
-
-			<!-- tabs inc/_tabs.html -->
-			
-			<!-- /tabs -->
-
-			</div>
-		</div>
-	</div>
+<!-- /logo -->
 
 </div>
 
-<div class="container e_container_content">
+<div class="col-xs-16">
 
 	<div class="row">
 		<div class="col-xs-16">
 
-			<div class="content-wrap">
+			<!-- slide-big inc/_banner.html -->
+			<div class="m_banner">
+	<img class="img-responsive" src="./bower_components/bootstrap/assets/images/banner.jpg" alt="" />
+</div>
+			<!-- /slide-big -->
 
-			<!-- main-list inc/_main-list.html -->
-			<div class="main f_main">
+		</div>
+	</div>
 
-	<span class="bor"></span>
+	<div class="row">
+		<div class="col-xs-16 col-sm-11 col-sm-push-5">
+
+		<!-- main-list inc/_main-list.html -->
+		<div class="main">
 
 	<!-- topinfo -->
-	<div class="row topinfo clearfix">
-		<div class="col-xs-16 col-sm-12">
-			<div class="c1">
-				<div class="bread tx_-1">
-					<a href="###">Home</a>
-					<span>&raquo;</span>
-					<a href="###">News</a>
-					<span>&raquo;</span>
-					<span>Global</span>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 hidden-xs">
-			<div class="c2">
-				<span class="tit tx_times">Global</span>
+	<div class="row topinfo tx_r clearfix">
+		<div class="col-xs-16">
+			<div class="bread tx_-2 tx_geor">
+				<a href="###">Home</a>
+				<span>&raquo;</span>
+				<a href="###">News</a>
+				<span>&raquo;</span>
+				<span>Global</span>
 			</div>
 		</div>
 	</div>
 	<!-- /topinfo -->
 
 	<!-- msgList -->
-	<ul class="msgList tx_verd tx_-1 tx_lh17">
+	<h4 class="msgTit tx_geor">Global</h4>
+	<ul class="msgList tx_geor">
 		<li class="item">
 			<a href="./detail.html" class="lk">Lorem ipsum dolor amet, consectetur adipisicing elit [2014-07-27]</a>
 		</li>
@@ -306,23 +284,21 @@ document.createElement('aside');
 	<!-- /pager -->
 
 </div>
-			<!-- /main-list -->
-
-			<!-- side-list inc/_side-list.html -->
-			<aside class="side f_side">
-	<div class="side_bd">
-
-	<!-- topinfo -->
-	<div class="topinfo clearfix">
-		<div class="c2">
-			<span class="tit tx_times">NEWS</span>
+		<!-- /main-list -->
+			
 		</div>
-	</div>
-	<!-- /topinfo -->
+		<div class="col-side col-xs-16 col-sm-5 col-sm-pull-11">
+
+		<!-- side-list inc/_side-list.html -->
+		<aside class="side">
+	<div class="side_bd">
 
 	<!-- sidenav -->
 	<div class="sidenav">
 		<ul class="lst1">
+		<li class="item">
+			<a href="###" class="lk">About PKU</a>
+		</li>
 		<li class="item">
 			<a href="###" class="lk">News</a>
 			<ul class="lst2 clearfix">
@@ -335,17 +311,41 @@ document.createElement('aside');
 			</ul>
 		</li>
 		<li class="item">
-			<a href="###" class="lk">Spotlight</a>
+			<a href="###" class="lk">Events</a>
 		</li>
 		<li class="item">
-			<a href="###" class="lk">Points of View</a>
+			<a href="###" class="lk">Schools & Departments</a>
 		</li>
 		<li class="item">
-			<a href="###" class="lk">PKU Newsletter</a>
+			<a href="###" class="lk">Admission</a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk">Academics & Research</a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk">Administration</a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk">Employment</a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk">Health Science Center</a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk">Library</a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk">Giving To PKU</a>
+		</li>
+		<li class="item">
+			<a href="###" class="lk">Alumni</a>
 		</li>
 		</ul>
 	</div>
 	<!-- /sidenav -->
+
+	</div>
+	<div class="side_ft">
 
 	<!-- sidebtm -->
 	<div class="sidebtm">
@@ -391,31 +391,116 @@ document.createElement('aside');
 		</div>	
 	</div>
 	<!-- /sidebtm -->
-
+		
 	</div>
 </aside>
-			<!-- /side-list -->
+		<!-- /side-list -->
 			
-			</div>
-
 		</div>
 	</div>
 	
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid e_container_recommend">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-16">
+
+			<!-- recommend inc/_recommend.html -->
+			<div class="m_recommend">
+	<div class="m_recommend_bd clearfix">
+		<div class="item e_item_1">
+			<div class="item_bd">
+				<div class="pic"><img src="./bower_components/bootstrap/assets/images/p1.jpg" alt="" /></div>
+				<div class="static">
+					<div class="tit">ACADEMIC</div>
+					<div class="msg">New design surpasses the coherent interaction limit.</div>
+				</div>
+				<div class="dock-msg">
+					<div class="tit">ACADEMIC</div>
+					<div class="msg">New design surpasses the coherent interaction limit</div>
+				</div>
+				<a href="###" class="pcover"></a>
+			</div>
+		</div>
+		<div class="item e_item_2">
+			<div class="item_bd">
+				<div class="pic"><img src="./bower_components/bootstrap/assets/images/p2.jpg" alt="" /></div>
+				<div class="static">
+					<div class="tit">FOCUS</div>
+					<div class="msg">New design surpasses the coherent interaction limit.</div>
+				</div>
+				<div class="dock-msg">
+					<div class="tit">FOCUS</div>
+					<div class="msg">New design surpasses the coherent interaction limit</div>
+				</div>
+				<a href="###" class="pcover"></a>
+			</div>
+		</div>
+		<div class="item e_item_3">
+			<div class="item_bd">
+				<div class="pic"><img src="./bower_components/bootstrap/assets/images/p3.jpg" alt="" /></div>
+				<div class="static">
+					<div class="tit">STUDENT</div>
+					<div class="msg">New design surpasses the coherent interaction limit.</div>
+				</div>
+				<div class="dock-msg">
+					<div class="tit">STUDENT</div>
+					<div class="msg">New design surpasses the coherent interaction limit</div>
+				</div>
+				<a href="###" class="pcover"></a>
+			</div>
+		</div>
+		<div class="item e_item_4">
+			<div class="item_bd">
+				<div class="pic"><img src="./bower_components/bootstrap/assets/images/p4.jpg" alt="" /></div>
+				<div class="static">
+					<div class="tit">CULTURE</div>
+					<div class="msg">New design surpasses the coherent interaction limit.</div>
+				</div>
+				<div class="dock-msg">
+					<div class="tit">CULTURE</div>
+					<div class="msg">New design surpasses the coherent interaction limit</div>
+				</div>
+				<a href="###" class="pcover"></a>
+			</div>
+		</div>
+		<div class="item e_item_5">
+			<div class="item_bd">
+				<div class="pic"><img src="./bower_components/bootstrap/assets/images/p5.jpg" alt="" /></div>
+				<div class="static">
+					<div class="tit">MEDIA</div>
+					<div class="msg">New design surpasses the coherent interaction limit.</div>
+				</div>
+				<div class="dock-msg">
+					<div class="tit">MEDIA</div>
+					<div class="msg">New design surpasses the coherent interaction limit</div>
+				</div>
+				<a href="###" class="pcover"></a>
+			</div>
+		</div>
+	</div>
+</div>
+			<!-- /recommend -->
+				
+			</div>
+		</div>
+		
+	</div>
 </div>
 
 <div class="container-fluid e_container-fluid_btm">
 	<div class="container">
 
 		<div class="row">
-			<div class="col-xs-16">
+			<div class="col-xs-16 col-sm-8">
 
-				<div class="content-wrap e_content-wrap_btm">
-					<div class="main">
-						<div class="row">
-							<div class="col-xs-16 col-sm-10">
-
-							<!-- tabs-btm inc/_tabs-btm.html -->
-							<div class="m_tabs e_tabs_btm">
+			<!-- tabs-btm inc/_tabs-btm.html -->
+			<div class="m_tabs e_tabs_btm">
 	<ul class="clearfix">
 	<li class="item">
 		<a href="###" class="lk"><span class="txt">About PKU</span></a>
@@ -455,17 +540,13 @@ document.createElement('aside');
 	</li>
 	</ul>
 </div>
-							<!-- /tabs-btm -->
+			<!-- /tabs-btm -->
 
-							</div>
-						</div>
-					</div>
-					<div class="side">
-						<div class="side_bd">
-							<div class="row">
+			</div>
+			<div class="col-xs-16 col-sm-8 col-md-7 col-md-offset-1">
 
-							<!-- foot-sub inc/_foot-sub.html -->
-							<div class="col-xs-16 col-sm-10">
+			<!-- foot-sub inc/_foot-sub.html -->
+			<div class="col-xs-16 col-sm-10">
 	<div class="m_foot-logo">
 		<img class="logo img-responsive mauto" src="bower_components/bootstrap/assets/images/logo.png" alt="Peking University" />
 	</div>
@@ -489,18 +570,12 @@ document.createElement('aside');
 		&copy; 2014 Peking University<br />Peking University, No.5 Yiheyuan Road Haidian District, Beijing, P.R.China 100871<br />webmaster@pku.edu.cn
 	</div>
 </div>
-							<!-- /foot-sub -->
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-
+			<!-- /foot-sub -->
+				
 			</div>
 		</div>
 
-	</div>
+	</div>		
 </div>
 
 <!-- footer inc/_footer.html -->

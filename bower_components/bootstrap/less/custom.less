@@ -251,85 +251,82 @@
 .ico_txwb{ background-position:-74px -82px}
 .ico_wechat{ background-position:-105px -51px}
 
-.e_social-plat_sub{ margin:0 15px; padding-top:25px; padding-bottom:15px; border-top:#c2c2c2 1px solid; text-align:center;}
+.e_social-plat_sub{ margin:0 15px; padding-top:25px; padding-bottom:15px; border-top:#898989 1px solid; text-align:center;}
 .e_social-plat_sub .item{ display:inline; float:none}
 
 // banner
-.m_banner{ height:@tabs_h; overflow:hidden;}
+.m_banner{ overflow:hidden;}
 
 // container_content
-.e_container_content{ margin-top:15px;}
+.e_container_content{ margin-bottom:30px}
 
 // content-wrap
 .content-wrap{}
 
 // main
-.main{ position:relative;}
-.main .bor{ display:none; position:absolute; top:0; bottom:0; right:-8px; width:8px; height:100%; background:#dcdcdc; font-size:0; overflow:hidden;}
+.main{ position:relative; border-bottom:#b2b2b2 1px solid}
 
 .e_container_content .main{}
 
 .e_content-wrap_detail .main{}
 
-.e_container_add .main{ z-index:1; border-top:#dcdcdc 1px solid}
-.e_container_add .main .bor{}
-
 // side
 .side{ position:relative;}
-.side .side_bd{}
-
-.e_container_add .side{ border-top:#dcdcdc 1px solid}
+.side .side_bd{ background:#003670; color:#fff}
+.side .side_bd a:link,
+.side .side_bd a:hover,
+.side .side_bd a:active,
+.side .side_bd a:visited{ color:#fff}
 
 // topinfo
 .topinfo{}
-.topinfo .c1{}
-.topinfo .c2{ text-align:right; padding-right:6px}
-.topinfo .c1 .bread{ padding-top:4px; color:#c2c2c2}
-.topinfo .c1 .bread a:link,
-.topinfo .c1 .bread a:hover,
-.topinfo .c1 .bread a:active,
-.topinfo .c1 .bread a:visited{ color:#c2c2c2}
-.topinfo .c2 .tit{ font-size:1.55em; color:#808080}
+.topinfo .bread{ padding-top:10px; color:#898989}
+.topinfo .bread a:link,
+.topinfo .bread a:hover,
+.topinfo .bread a:active,
+.topinfo .bread a:visited{ color:#898989}
 
 // msgList
+.msgTit{ margin:15px 0 0; padding:0; color:#003670; font-size:1.25em}
+
 .msgList,
 .msgList li{ list-style:none; margin:0; padding:0}
 .msgList{ margin:20px 16px 30px 0}
-.msgList .item{ position:relative; margin-bottom:10px; padding-left:16px; color:#4d4d4d}
+.msgList .item{ position:relative; margin-bottom:12px; padding-left:16px; color:#4d4d4d}
 .msgList .item:last-child{ margin-bottom:0;}
 .msgList .item:before{ position:absolute; left:0; content:'>';}
 .msgList .lk:link,
 .msgList .lk:hover,
 .msgList .lk:active,
-.msgList .lk:visited{ color:#4d4d4d}
+.msgList .lk:visited{ color:#464646}
 
 // pager
 .m_pager{ text-align:right}
 
 // sidenav
-.sidenav{ margin-left:34px; margin-bottom:40px}
+.sidenav{ padding-top:22px; padding-left:22px; padding-bottom:22px}
 .sidenav ul,
 .sidenav li{ list-style:none; margin:0; padding:0}
 .sidenav li{}
 .sidenav li a{ display:inline-block; vertical-align:top}
-.sidenav .lst1{ font-family:Times,Times New Roman,serif;}
-.sidenav .lst1 .lk{ margin-top:15px}
+.sidenav .lst1{}
+.sidenav .lst1 .lk{ margin-top:6px}
 .sidenav .lst1 .item:first-child .lk{ margin-top:0}
 .sidenav .lst1 .lk:link,
 .sidenav .lst1 .lk:hover,
 .sidenav .lst1 .lk:active,
-.sidenav .lst1 .lk:visited{ color:#000}
-.sidenav .lst2{ font-family:Verdana,sans-serif;}
-.sidenav .lst2 li{ position:relative; width:40%; float:left; padding-left:20px; margin-top:10px; font-size:.875em}
+.sidenav .lst1 .lk:visited{ color:#fff}
+.sidenav .lst2{ padding:10px 0}
+.sidenav .lst2 li{ position:relative; width:40%; float:left; padding-left:20px; margin-top:6px; font-size:.75em}
 .sidenav .lst2 a:link,
 .sidenav .lst2 a:hover,
 .sidenav .lst2 a:active,
-.sidenav .lst2 a:visited{ color:#333}
-.sidenav .lst2 .active:before{ content:''; position:absolute; left:0; top:5px; width:4px; height:10px; font-size:0; overflow:hidden; background:#900000}
+.sidenav .lst2 a:visited{ color:#a3aec0}
+.sidenav .lst2 .active:before{ content:''; position:absolute; left:0; top:5px; width:4px; height:10px; font-size:0; overflow:hidden; background:#abbdd0}
 .sidenav .lst2 .active a:link,
 .sidenav .lst2 .active a:hover,
 .sidenav .lst2 .active a:active,
-.sidenav .lst2 .active a:visited{ color:#900000}
+.sidenav .lst2 .active a:visited{ color:#a3aec0}
 
 // sidebtm
 .sidebtm{ width:100%;}
@@ -404,8 +401,6 @@ body{}
 .ico_information{ top:4px}
 .ico_information_s{ float:left}
 
-.e_container_add .m_information{ padding-top:45px; padding-bottom:45px}
-
 // recommend
 .e_container_recommend{ border-top-width:82px}
 
@@ -439,7 +434,28 @@ body{}
 .m_recommend .e_item_4 .item_bd .dock-msg{ background:#6a9218}
 .m_recommend .e_item_5 .item_bd .dock-msg{ background:#e06c00}
 
+// sidenav
+.sidenav{ padding-bottom:40px}
 
+// container_content
+.e_container_content{ margin-bottom:90px}
+
+// content-wrap
+
+// main
+.main{}
+
+.e_container_content .main{ min-height:500px;}
+
+.e_content-wrap_detail .main{ width:100%}
+
+// side
+.col-side{ position:absolute; top:0}
+.side{ width:210px; overflow:hidden;}
+.side .side_bd{}
+
+.e_container_content .side{}
+.e_container_content .side .side_bd{}
 
 // foot
 .m_foot-logo{ text-align:left;}
@@ -450,7 +466,9 @@ body{}
 // content-wrap
 
 // msgList
-.msgList .item{ margin-bottom:14px}
+.msgTit{ margin-top:35px}
+
+.msgList .item{}
 
 // pager
 .m_pager{ padding:0 30px;}
@@ -529,35 +547,16 @@ body{}
 .m_recommend .e_item_3 .pcover,
 .m_recommend .e_item_5 .pcover{ background-position:-192px 0}
 
-// content-wrap
-
-// main
-.main{ width:@main; float:left;}
-.main .bor{ display:block}
-
-.e_container_content .main{ min-height:500px;}
-
-.e_content-wrap_detail .main{ width:100%}
-
-.e_container_add .main{}
-
-// side
-.side{ width:@side; overflow:hidden;}
-.side .side_bd{}
-
-.e_container_content .side{ border-top:#900000 2px solid;}
-.e_container_content .side .side_bd{ min-height:310px; padding-bottom:190px;}
-
 // msgList
-.msgList{ margin-top:45px; margin-bottom:90px}
+.msgList{ margin-top:15px; margin-bottom:45px}
 
 // sidenav
-.sidenav{ margin-top:20px;}
+.sidenav{}
 .sidenav .lst2 li{ width:100%; float:none}
 
 // sidebtm
-.sidebtm{ position:absolute; left:0; bottom:0}
-.sidebtm_bd{ margin-left:8px}
+.sidebtm{}
+.sidebtm_bd{}
 
 }
 
@@ -597,6 +596,6 @@ body{}
 .m_recommend{}
 
 // banner
-.m_banner{ height:@tabs_h;}
+.m_banner{}
 
 }
