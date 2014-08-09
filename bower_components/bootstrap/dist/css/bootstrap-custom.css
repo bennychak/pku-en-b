@@ -1003,6 +1003,10 @@ body .borl0 {
 .m_banner {
   position: relative;
 }
+.m_banner img {
+  max-height: 250px;
+  width: 100%;
+}
 .m_banner .cloud {
   position: absolute;
   z-index: 1;
@@ -1388,6 +1392,9 @@ body .borl0 {
   .m_recommend .e_item_5 .item_bd .dock-msg {
     background-color: #e06c00;
   }
+  .m_banner img {
+    max-height: 236px;
+  }
   .m_banner .cloud {
     left: 20px;
     margin-bottom: -220px;
@@ -1542,6 +1549,9 @@ body .borl0 {
   .m_recommend .e_item_5 .pcover {
     background-position: -192px 0;
   }
+  .m_banner img {
+    max-height: 308px;
+  }
   .msgList {
     margin-top: 15px;
     margin-bottom: 45px;
@@ -1597,6 +1607,9 @@ body .borl0 {
   }
   .m_slide .slide_group .item .info {
     padding-top: 50px;
+  }
+  .m_banner img {
+    max-height: 360px;
   }
 }
 /*# sourceMappingURL=bootstrap-custom.css.map */
