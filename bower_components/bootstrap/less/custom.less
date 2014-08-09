@@ -35,10 +35,10 @@
 .container{ _width:960px}
 
 // navbar
-.navbar{min-height:38px; border:none;}
+.navbar{min-height:30px; border:none;}
 .e_container_navwrap{padding-left:0; padding-right:0}
-.e_input_search{ height:38px; border-radius:0; border:none; background:#808080; color:#fff}
-.e_btn_search{ border:none; border-radius:0; text-shadow:none; padding-top:9px; padding-bottom:9px;}
+.e_input_search{ height:30px; border-radius:0; border:none; background:#808080; color:#fff}
+.e_btn_search{ border:none; border-radius:0; text-shadow:none; padding-top:5px; padding-bottom:5px; font-size:12px}
 .e_btn_search,
 .e_btn_search:hover,
 .e_btn_search:focus,
@@ -170,20 +170,21 @@
 .m_information a:visited{ color:#4d6989}
 .m_information ul,
 .m_information li{ margin:0; padding:0; list-style:none}
-.m_information .item{ position:relative; float:left; width:33%; height:125px; border-right:#dcdcdc 1px solid; color:#4d6989}
-.m_information .last{ border-right:none;}
+.m_information .item{ position:relative; float:left; width:33%; height:80px; border-right:#dcdcdc 1px solid; color:#4d6989}
+.m_information .last{ border-right:none}
 .m_information .item .ico_information,
 .m_information .item .desc{ position:absolute;}
 .m_information .item .desc{ display:none; left:0; top:-10px; width:100%; height:145px;}
-.m_information .item .desc .c1{ height:91px; margin:0 5px; font-size:.875em;}
+.m_information .item .desc .c1{ height:66px; margin:0 5px; font-size:.75em;}
 .m_information .item .desc .c1 .project{ overflow:hidden; line-height:1.3em; margin-left:3px}
-.m_information .item .desc .c2{ margin:0 10px; padding-top:12px; border-top:#d6dce4 1px solid; font-size:.75em; text-align:right}
-.ico_information{ left:50%; top:25px; margin-left:-36px; width:73px; height:73px; padding-top:11px; background-position:0 -51px}
+.m_information .item .desc .c2{ margin:0 10px; padding-left:22px; padding-top:12px; border-top:#d6dce4 1px solid; font-size:.75em;}
+.m_information .item .desc .c2 a{ display:block; float:left; margin-right:3px; white-space:nowrap;}
+.ico_information{ left:50%; top:0; margin-left:-36px; width:73px; height:73px; padding-top:11px; background-position:0 -51px}
 .ico_information i{ display:block; width:50px; height:50px; margin-left:12px}
 .ico_newsletter i{}
 .ico_students i{ background-position:-52px 0}
 .ico_mooc i{ background-position:-104px 0}
-.ico_information_s{ margin:2px 10px 0 3px; width:25px; height:25px;}
+.ico_information_s{ float:left; margin:0 5px 0 0; width:25px; height:25px;}
 .ico_newsletter_s{}
 .ico_students_s{ background-position:-26px 0}
 .ico_mooc_s{ background-position:-52px 0}
@@ -421,12 +422,13 @@ body{}
 // information
 .m_information .item{ height:80px;}
 .m_information .item .desc{ height:100px;}
-.m_information .item .desc .c1{ height:66px; margin-left:10px; margin-right:10px}
+.m_information .item .desc .c1{ height:66px; margin-left:10px; margin-right:10px; font-size:.875em}
 .m_information .item .desc .c1 .project{ float:none; margin-left:0}
+.m_information .item .desc .c2{ padding-left:30px}
 .side .m_information .item{ float:none; margin:15px auto 0; height:95px; width:130px; border-right:none; border-bottom:#d6dce4 1px solid;}
 .side .m_information .last{ border-bottom:none}
 .ico_information{ top:4px}
-.ico_information_s{ float:left}
+.ico_information_s{}
 
 // recommend
 .e_container_recommend{ border-top-width:82px; background-size:52px 30px}
@@ -543,7 +545,7 @@ body{}
 
 // navbar
 .navbar{ border-radius:0; background:#000}
-.navbar-nav > li > a{ padding:9px}
+.navbar-nav > li > a{ padding:4px 9px; font-size:.8125em}
 
 .navbar-form{ margin-top:0; margin-bottom:0}
 
