@@ -171,7 +171,7 @@
 .m_information ul,
 .m_information li{ margin:0; padding:0; list-style:none}
 .m_information .item{ position:relative; float:left; width:33%; height:125px; border-right:#dcdcdc 1px solid; color:#4d6989}
-.m_information .last{ border-right:none}
+.m_information .last{ border-right:none;}
 .m_information .item .ico_information,
 .m_information .item .desc{ position:absolute;}
 .m_information .item .desc{ display:none; left:0; top:-10px; width:100%; height:145px;}
@@ -189,12 +189,24 @@
 .ico_mooc_s{ background-position:-52px 0}
 
 // recommend
-.e_container_recommend{ position:relative; background:#033872; border-top:#fff 41px solid; border-bottom:#368577 8px solid}
+.e_container_recommend{ position:relative; background:#033872 url(../../assets/images/honeycomb.png) center center; background-size:26px 15px; border-top:#fff 41px solid; border-bottom:#368577 8px solid}
 .e_container_recommend .container{ position:relative; padding-left:0; padding-right:0}
 
 .m_recommend{ max-width:320px; margin:0 auto}
 .m_recommend .item{ width:50%; padding-bottom:10px; float:left; text-align:center; color:#fff;}
-.m_recommend .item_bd{ position:relative; overflow:hidden; width:95px; height:82px;}
+.m_recommend .item_bd{ position:relative; overflow:hidden; width:95px; height:82px;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-webkit-clip-path:polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+	-moz-clip-path:polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+	-o-clip-path:polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+	-ms-clip-path:polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+	clip-path:polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+	outline:none;
+}
 .m_recommend .item .pic img{ width:95px; height:82px}
 .m_recommend .item .pic:after{ content:''; position:absolute; left:0; bottom:0; height:50%; width:100%}
 .m_recommend .item .static{ position:absolute; width:57px; left:19px; top:0; padding-top:36px;}
@@ -209,7 +221,8 @@
 }
 .m_recommend .item .dock-msg .msg{ font-family:Georgia,serif; font-style:italic; opacity:.7; padding:0 20px}
 .m_recommend .item .pcover{ display:block; position:absolute; width:95px; height:82px; left:0; top:0;
-	background-image:url(../../assets/images/pcover.png); background-size:191px 82px; background-repeat:no-repeat; background-position:0 0;
+	background-image:url(../../assets/images/pcover.png); background-size:191px 165px; background-repeat:no-repeat; background-position:0 0;
+	-webkit-mask-image:url(../../assets/images/pcover.png)
 }
 .m_recommend .e_item_1,
 .m_recommend .e_item_2{ margin-top:-41px}
@@ -304,12 +317,14 @@
 .m_pager{ text-align:right}
 
 // sidenav
-.sidenav{ padding-top:22px; padding-left:22px; padding-bottom:22px}
+.sidenav{ padding-top:22px; padding-bottom:22px}
 .sidenav ul,
 .sidenav li{ list-style:none; margin:0; padding:0}
-.sidenav li{}
+.sidenav li{ position:relative;}
 .sidenav li a{ display:inline-block; vertical-align:top}
 .sidenav .lst1{}
+.sidenav .lst1 .item{ padding-left:22px;}
+.sidenav .lst1 .active:before{ content:''; position:absolute; left:10px; top:15px; width:4px; height:5px; font-size:0; overflow:hidden; background-color:#fff}
 .sidenav .lst1 .lk{ margin-top:6px}
 .sidenav .lst1 .item:first-child .lk{ margin-top:0}
 .sidenav .lst1 .lk:link,
@@ -317,12 +332,12 @@
 .sidenav .lst1 .lk:active,
 .sidenav .lst1 .lk:visited{ color:#fff}
 .sidenav .lst2{ padding:10px 0}
-.sidenav .lst2 li{ position:relative; width:40%; float:left; padding-left:20px; margin-top:6px; font-size:.75em}
+.sidenav .lst2 li{ width:40%; float:left; padding-left:20px; margin-top:6px; font-size:.75em}
+.sidenav .lst2 .active:before{ top:5px; background-color:#abbdd0}
 .sidenav .lst2 a:link,
 .sidenav .lst2 a:hover,
 .sidenav .lst2 a:active,
 .sidenav .lst2 a:visited{ color:#a3aec0}
-.sidenav .lst2 .active:before{ content:''; position:absolute; left:0; top:5px; width:4px; height:10px; font-size:0; overflow:hidden; background:#abbdd0}
 .sidenav .lst2 .active a:link,
 .sidenav .lst2 .active a:hover,
 .sidenav .lst2 .active a:active,
@@ -398,11 +413,13 @@ body{}
 .m_information .item .desc{ height:100px;}
 .m_information .item .desc .c1{ height:66px; margin-left:10px; margin-right:10px}
 .m_information .item .desc .c1 .project{ float:none; margin-left:0}
+.side .m_information .item{ float:none; margin:15px auto 0; height:95px; width:130px; border-right:none; border-bottom:#d6dce4 1px solid;}
+.side .m_information .last{ border-bottom:none}
 .ico_information{ top:4px}
 .ico_information_s{ float:left}
 
 // recommend
-.e_container_recommend{ border-top-width:82px}
+.e_container_recommend{ border-top-width:82px; background-size:52px 30px}
 
 .m_recommend{ max-width:600px}
 .m_recommend .item{}
@@ -415,7 +432,7 @@ body{}
 .m_recommend .item .dock-msg .tit{ padding:25px 0 10px; font-size:.9375em}
 .m_recommend .item .dock-msg .msg{ font-size:.875em}
 .m_recommend .item_bd:hover .dock-msg{ opacity:1;}
-.m_recommend .item .pcover{ width:190px; height:164px; background-size:382px 164px;}
+.m_recommend .item .pcover{ width:190px; height:164px; background-size:382px 330px;}
 .m_recommend .e_item_1,
 .m_recommend .e_item_2{ margin-top:-82px}
 .m_recommend .e_item_3{}

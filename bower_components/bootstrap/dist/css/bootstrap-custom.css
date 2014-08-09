@@ -744,7 +744,8 @@ a:visited,
 }
 .e_container_recommend {
   position: relative;
-  background: #033872;
+  background: #033872 url(../../assets/images/honeycomb.png) center center;
+  background-size: 26px 15px;
   border-top: #fff 41px solid;
   border-bottom: #368577 8px solid;
 }
@@ -769,6 +770,17 @@ a:visited,
   overflow: hidden;
   width: 95px;
   height: 82px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-clip-path: polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+  -moz-clip-path: polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+  -o-clip-path: polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+  -ms-clip-path: polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+  clip-path: polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
+  outline: none;
 }
 .m_recommend .item .pic img {
   width: 95px;
@@ -826,9 +838,10 @@ a:visited,
   left: 0;
   top: 0;
   background-image: url(../../assets/images/pcover.png);
-  background-size: 191px 82px;
+  background-size: 191px 165px;
   background-repeat: no-repeat;
   background-position: 0 0;
+  -webkit-mask-image: url(../../assets/images/pcover.png);
 }
 .m_recommend .e_item_1,
 .m_recommend .e_item_2 {
@@ -1015,7 +1028,6 @@ a:visited,
 }
 .sidenav {
   padding-top: 22px;
-  padding-left: 22px;
   padding-bottom: 22px;
 }
 .sidenav ul,
@@ -1024,9 +1036,26 @@ a:visited,
   margin: 0;
   padding: 0;
 }
+.sidenav li {
+  position: relative;
+}
 .sidenav li a {
   display: inline-block;
   vertical-align: top;
+}
+.sidenav .lst1 .item {
+  padding-left: 22px;
+}
+.sidenav .lst1 .active:before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 4px;
+  height: 5px;
+  font-size: 0;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 .sidenav .lst1 .lk {
   margin-top: 6px;
@@ -1044,29 +1073,21 @@ a:visited,
   padding: 10px 0;
 }
 .sidenav .lst2 li {
-  position: relative;
   width: 40%;
   float: left;
   padding-left: 20px;
   margin-top: 6px;
   font-size: 0.75em;
 }
+.sidenav .lst2 .active:before {
+  top: 5px;
+  background-color: #abbdd0;
+}
 .sidenav .lst2 a:link,
 .sidenav .lst2 a:hover,
 .sidenav .lst2 a:active,
 .sidenav .lst2 a:visited {
   color: #a3aec0;
-}
-.sidenav .lst2 .active:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 5px;
-  width: 4px;
-  height: 10px;
-  font-size: 0;
-  overflow: hidden;
-  background: #abbdd0;
 }
 .sidenav .lst2 .active a:link,
 .sidenav .lst2 .active a:hover,
@@ -1216,6 +1237,17 @@ a:visited,
     float: none;
     margin-left: 0;
   }
+  .side .m_information .item {
+    float: none;
+    margin: 15px auto 0;
+    height: 95px;
+    width: 130px;
+    border-right: none;
+    border-bottom: #d6dce4 1px solid;
+  }
+  .side .m_information .last {
+    border-bottom: none;
+  }
   .ico_information {
     top: 4px;
   }
@@ -1224,6 +1256,7 @@ a:visited,
   }
   .e_container_recommend {
     border-top-width: 82px;
+    background-size: 52px 30px;
   }
   .m_recommend {
     max-width: 600px;
@@ -1266,7 +1299,7 @@ a:visited,
   .m_recommend .item .pcover {
     width: 190px;
     height: 164px;
-    background-size: 382px 164px;
+    background-size: 382px 330px;
   }
   .m_recommend .e_item_1,
   .m_recommend .e_item_2 {
