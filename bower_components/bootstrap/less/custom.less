@@ -108,11 +108,12 @@
 
 .m_slide .slide_group{ overflow:hidden}
 .m_slide .slide_group ul,
-.m_slide .slide_group li{ margin:0; padding:0}
-.m_slide .slide_group ul{ width:100%; display:table;}
-.m_slide .slide_group .item{ position: relative; display:table-cell; vertical-align:top}
-.m_slide .slide_group .item .lk{ position:relative; display:block; margin:0 3px; overflow:hidden;}
+.m_slide .slide_group li{ margin:0; padding:0; display:block}
+.m_slide .slide_group ul{}
+.m_slide .slide_group .item{ position: relative; overflow:hidden; float:left; width:32.6%; margin-right:1.1%}
+.m_slide .slide_group .item .lk{ display:block;}
 .m_slide .slide_group .item:first-child .lk{ margin-left:0}
+.m_slide .slide_group .item:last-child{ margin-right:0}
 .m_slide .slide_group .item:last-child .lk{ margin-right:0}
 .m_slide .slide_group .item img{ width:100%}
 .m_slide .slide_group .item .info{ position:absolute; left:0; bottom:0; width:100%; padding:20px 0 10px 5px; display:block; overflow:hidden; font-size:.875em;}
@@ -412,9 +413,9 @@ body{}
 .m_slide .slide-c2{}
 .m_slide .slide_big{ width:520px; float:left; margin-bottom:0}
 .m_slide .slide_group{}
-.m_slide .slide_group ul{ display:block}
-.m_slide .slide_group .item{ display:block}
-.m_slide .slide_group .item .lk{ margin:0}
+.m_slide .slide_group ul{}
+.m_slide .slide_group .item{ float:none;}
+.m_slide .slide_group .item .lk{}
 .m_slide .slide_group .item img{ height:98px; width:100px; float:left; display:block}
 .m_slide .slide_group .item .info{ position:static; width:auto; padding-top:40px; padding-left:0; background:none; text-align:center;}
 
