@@ -73,7 +73,7 @@
 .m_logo .c2 a:visited{ color:#000}
 
 // slide
-.e_container_slide{ background:#003670 url(../../assets/images/slide-bg2.png) center center no-repeat;}
+.e_container_slide{ background:#fff url(../../assets/images/slide-bg2.png) center center no-repeat;}
 .e_container_slide,
 .e_container_slide .container{ padding-left:0; padding-right:0}
 
@@ -340,13 +340,13 @@
 .sidenav{ position:relative; z-index:1; padding-top:16px; padding-bottom:22px}
 .sidenav ul,
 .sidenav li{ list-style:none; margin:0; padding:0}
-.sidenav li{ position:relative;}
+.sidenav li{ position:relative; font-size:.875em}
 .sidenav li a{ display:inline-block; vertical-align:top}
 .sidenav li:hover:before,
-.sidenav .active:before{ content:''; position:absolute; left:10px; top:15px; width:4px; height:5px; font-size:0; overflow:hidden; background-color:#fff}
+.sidenav .active:before{ content:''; position:absolute; left:10px; top:10px; width:4px; height:5px; font-size:0; overflow:hidden; background-color:#fff}
 .sidenav .lst1{}
-.sidenav .lst1 .item{ padding-left:22px;}
-.sidenav .lst1 .lk{ margin-top:6px}
+.sidenav .lst1 .item{ padding-left:22px}
+.sidenav .lst1 .lk{ margin-top:1px}
 .sidenav .lst1 .lk:link,
 .sidenav .lst1 .lk:hover,
 .sidenav .lst1 .lk:active,
@@ -406,6 +406,7 @@ body{}
 // slide
 .e_container_slide,
 .e_container_slide .container{ padding-left:9px; padding-right:9px}
+.e_container_slide{ background-color:#003670}
 
 .m_slide{}
 .m_slide .slide-c1{}
@@ -645,5 +646,11 @@ body{}
 // banner
 .m_banner{}
 .m_banner img{ max-height:360px}
+
+// sidenav
+.sidenav li{ font-size:1em}
+.sidenav li:hover:before,
+.sidenav .active:before{ top:15px;}
+.sidenav .lst1 .lk{ margin-top:6px}
 
 }
