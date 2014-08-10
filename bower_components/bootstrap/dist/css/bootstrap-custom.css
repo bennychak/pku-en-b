@@ -1279,6 +1279,7 @@ body .borl0 {
   }
   .m_slide .slide_group .item {
     float: none;
+    width: 100%;
   }
   .m_slide .slide_group .item img {
     height: 98px;
