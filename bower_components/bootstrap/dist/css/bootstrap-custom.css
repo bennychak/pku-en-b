@@ -358,6 +358,10 @@ body .borl0 {
 .container {
   _width: 960px;
 }
+.col-edge {
+  padding-left: 9px;
+  padding-right: 9px;
+}
 .navbar {
   min-height: 30px;
   border: none;
@@ -770,8 +774,6 @@ body .borl0 {
 }
 .e_container_recommend {
   position: relative;
-  padding-left: 0;
-  padding-right: 0;
   background: #033872 url(../../assets/images/honeycomb.png) center center;
   background-size: 26px 15px;
   border-top: #fff 41px solid;
@@ -1245,6 +1247,10 @@ body .borl0 {
 @media (min-width: 768px) {
   .f_infoimg {
     visibility: hidden;
+  }
+  .col-edge {
+    padding-left: 0;
+    padding-right: 0;
   }
   .m_logo .c1 {
     float: left;
