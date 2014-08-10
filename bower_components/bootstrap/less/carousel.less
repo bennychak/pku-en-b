@@ -147,41 +147,29 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
+  bottom: 15px;
+  right:20px;
   z-index: 15;
-  width: 60%;
-  margin-left: -30%;
   padding-left: 0;
   list-style: none;
   text-align: center;
+  font-size:0;
+  margin-bottom:0;
 
   li {
     display: inline-block;
-    width:  10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    border: 1px solid @carousel-indicator-border-color;
-    border-radius: 10px;
-    cursor: pointer;
-
-    // IE8-9 hack for event handling
-    //
-    // Internet Explorer 8-9 does not support clicks on elements without a set
-    // `background-color`. We cannot use `filter` since that's not viewed as a
-    // background color by the browser. Thus, a hack is needed.
-    //
-    // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
-    // set alpha transparency for the best results possible.
-    background-color: #000 \9; // IE8
-    background-color: rgba(0,0,0,0); // IE9
-  }
-  .active {
-    margin: 0;
     width:  12px;
     height: 12px;
-    background-color: @carousel-indicator-active-bg;
+    margin-left: 7px;
+    text-indent: -999px;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow:hidden;
+    background-color:#865555;
+    background-color:rgba(255,255,255,.3);
+  }
+  .active {
+    background-color:#003670;
   }
 }
 
@@ -190,14 +178,11 @@
 // Hidden by default for smaller viewports
 .carousel-caption {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: @carousel-caption-color;
-  text-align: center;
   text-shadow: @carousel-text-shadow;
   & .btn {
     text-shadow: none; // No shadow for button elements in carousel-caption
@@ -231,13 +216,14 @@
 
   // Show and left align the captions
   .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
+    left: 0;
+    right: 0;
   }
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20px;
+
+    li{
+    }
   }
 }

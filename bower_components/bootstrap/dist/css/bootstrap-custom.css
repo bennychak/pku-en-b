@@ -517,6 +517,9 @@ body .borl0 {
 .m_slide .slide_big .pic .info .c1 {
   float: right;
 }
+.m_slide .slide_big .pic .info .c2 {
+  margin-right: 80px;
+}
 .m_slide .slide_group {
   overflow: hidden;
 }

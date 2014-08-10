@@ -14,6 +14,10 @@
 <!-- Bootstrap core CSS file -->
 <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
 
+<!--[if lt IE 8]>
+<link href="./bower_components/bootstrap-ie7/css/bootstrap-ie7.css" rel="stylesheet">
+<![endif]-->
+
 <!-- Icomoon font icon library -->
 <!-- <link rel="stylesheet" href="./bower_components/icomoon/style.css"> -->
 
@@ -207,15 +211,57 @@ document.createElement('aside');
 		</div>
 	</div>
 	<div class="slide-c2 clearfix">
+		
 		<div class="slide_big">
-			<a href="###" class="pic">
-				<img class="img-responsive" src="./bower_components/bootstrap/assets/images/slide-big.jpg" alt="" />
-				<span class="info clearfix">
-					<span class="c1 tx_geor">TOP</span>
-					<span class="c2">2014 PKU Graduates Job Fair held on campus</span>
-				</span>
-			</a>
+
+			<!-- carousel -->
+			<div id="carousel-slide" class="carousel slide" data-ride="carousel">
+
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-slide" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-slide" data-slide-to="1"></li>
+			    <li data-target="#carousel-slide" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <a href="###"><img src="./bower_components/bootstrap/assets/images/slide-big.jpg" alt="" /></a>
+			      <div class="carousel-caption">
+			        <a href="###" class="pic">
+						<span class="info clearfix">
+							<span class="c2">2014 PKU Graduates Job Fair held on campus</span>
+						</span>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <a href="###"><img src="./bower_components/bootstrap/assets/images/slide-big.jpg" alt="" /></a>
+			      <div class="carousel-caption">
+			        <a href="###" class="pic">
+						<span class="info clearfix">
+							<span class="c2">2014 PKU Graduates Job Fair held on campus</span>
+						</span>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <a href="###"><img src="./bower_components/bootstrap/assets/images/slide-big.jpg" alt="" /></a>
+			      <div class="carousel-caption">
+			        <a href="###" class="pic">
+						<span class="info clearfix">
+							<span class="c2">2014 PKU Graduates Job Fair held on campus</span>
+						</span>
+			        </a>
+			      </div>
+			    </div>
+			  </div>
+
+			</div>
+			<!-- /carousel -->
 		</div>
+
 		<div class="slide_group">
 			<ul class="clearfix">
 			<li class="item">
@@ -235,6 +281,7 @@ document.createElement('aside');
 			</li>
 			</ul>
 		</div>
+
 	</div>
 </div>
 		<!-- /slide -->
