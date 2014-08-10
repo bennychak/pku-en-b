@@ -217,7 +217,6 @@
 	clip-path:polygon(25% 0, 75% 0, 100% 51%, 76% 100%, 24% 100%, 0 51%);
 	outline:none;
 }
-.m_recommend .item .pic img{ width:95px; height:82px}
 .m_recommend .item .pic:after{ content:''; position:absolute; left:0; bottom:0; height:50%; width:100%}
 .m_recommend .item .static{ position:absolute; width:57px; left:19px; top:0; padding-top:36px;}
 .m_recommend .item .static .tit{ font-size:.75em}
@@ -230,7 +229,9 @@
 	transition:opacity .2s ease-in-out;
 }
 .m_recommend .item .dock-msg .msg{ font-family:Georgia,serif; font-style:italic; opacity:.7; padding:0 20px}
-.m_recommend .item .pcover{ display:block; position:absolute; width:95px; height:82px; left:0; top:0;
+.m_recommend .item .pcover{ display:block; position:absolute; left:0; top:0;}
+.m_recommend .item .pic img,
+.m_recommend .item .pcover{ width:95px; height:82px;
 	background-image:url(../../assets/images/pcover.png); background-size:191px 82px; background-repeat:no-repeat; background-position:0 0;
 	-webkit-mask-image:url(../../assets/images/pcover_mask_s.png);
 	-moz-mask-image:url(../../assets/images/pcover_mask_s.png);
@@ -284,7 +285,7 @@
 .e_social-plat_sub .item{ display:inline; float:none}
 
 // banner
-.m_banner{ position:relative}
+.m_banner{ position:relative; background-color:#003670}
 .m_banner img{ max-height:250px; width:100%}
 .m_banner .cloud{ position:absolute; z-index:1; left:10px; bottom:0; margin-bottom:-110px; width:165px; height:120px; background:url(../../assets/images/cloud-bg.png) 0 0 no-repeat; background-size:165px 120px}
 
@@ -335,22 +336,23 @@
 .m_pager{ text-align:right}
 
 // sidenav
-.sidenav{ position:relative; z-index:1; padding-top:22px; padding-bottom:22px}
+.sidenav{ position:relative; z-index:1; padding-top:16px; padding-bottom:22px}
 .sidenav ul,
 .sidenav li{ list-style:none; margin:0; padding:0}
 .sidenav li{ position:relative;}
 .sidenav li a{ display:inline-block; vertical-align:top}
+.sidenav li:hover:before,
+.sidenav .active:before{ content:''; position:absolute; left:10px; top:15px; width:4px; height:5px; font-size:0; overflow:hidden; background-color:#fff}
 .sidenav .lst1{}
 .sidenav .lst1 .item{ padding-left:22px;}
-.sidenav .lst1 .active:before{ content:''; position:absolute; left:10px; top:15px; width:4px; height:5px; font-size:0; overflow:hidden; background-color:#fff}
 .sidenav .lst1 .lk{ margin-top:6px}
-.sidenav .lst1 .item:first-child .lk{ margin-top:0}
 .sidenav .lst1 .lk:link,
 .sidenav .lst1 .lk:hover,
 .sidenav .lst1 .lk:active,
 .sidenav .lst1 .lk:visited{ color:#fff}
 .sidenav .lst2{ padding:10px 0}
 .sidenav .lst2 li{ width:40%; float:left; padding-left:20px; margin-top:6px; font-size:.75em}
+.sidenav .lst2 li:hover:before,
 .sidenav .lst2 .active:before{ top:5px; background-color:#abbdd0}
 .sidenav .lst2 a:link,
 .sidenav .lst2 a:hover,
@@ -442,8 +444,7 @@ body{}
 
 .m_recommend{ max-width:600px}
 .m_recommend .item{}
-.m_recommend .item_bd{ width:190px; height:162px;}
-.m_recommend .item .pic img{ width:190px; height:162px}
+.m_recommend .item_bd{ width:190px; height:164px;}
 .m_recommend .item .static{ width:120px; left:35px; padding-top:78px}
 .m_recommend .item .static .tit{ font-size:1em}
 .m_recommend .item .static .msg{ display:block; font-size:.75em; opacity:.7}
@@ -451,7 +452,9 @@ body{}
 .m_recommend .item .dock-msg .tit{ padding:25px 0 10px; font-size:.9375em}
 .m_recommend .item .dock-msg .msg{ font-size:.875em}
 .m_recommend .item_bd:hover .dock-msg{ opacity:1;}
-.m_recommend .item .pcover{ width:190px; height:164px; background-size:382px 164px;
+.m_recommend .item .pcover{ background-size:382px 164px;}
+.m_recommend .item .pic img,
+.m_recommend .item .pcover{ width:190px; height:164px;
 	-webkit-mask-image:url(../../assets/images/pcover_mask.png);
 	-moz-mask-image:url(../../assets/images/pcover_mask.png);
 	-o-mask-image:url(../../assets/images/pcover_mask.png);
@@ -568,13 +571,6 @@ body{}
 // slide
 .m_slide{}
 .m_slide .slide-c1{ display:block; float:left; width:210px}
-.m_slide .slide_tabs{ padding:12px 0 0 17px; color:#fff}
-.m_slide .slide_tabs ul,
-.m_slide .slide_tabs .item{ margin:0; padding:0; list-style:none;}
-.m_slide .slide_tabs .item{ display:block; margin-bottom:2px; text-indent:-5px; font-size:.875em}
-.m_slide .slide_tabs .item:hover{ list-style:square;}
-.m_slide .slide_tabs .item .lk{ display:block}
-
 .m_slide .slide-c2{}
 .m_slide .slide_big{}
 .m_slide .slide_group{ width:210px}
@@ -633,9 +629,6 @@ body{}
 // slide
 .m_slide{}
 .m_slide .slide-c1{}
-.m_slide .slide_tabs{ padding-top:22px; padding-left:27px}
-.m_slide .slide_tabs .item{ margin-bottom:6px; font-size:1em}
-
 .m_slide .slide-c2{}
 .m_slide .slide_big{ width:680px}
 .m_slide .slide_big .pic .info{ padding:50px 0 15px; font-size:1em}
