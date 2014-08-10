@@ -1521,6 +1521,7 @@ body .borl0 {
     list-style: none;
   }
   .m_slide .slide_tabs .item {
+    display: block;
     margin-bottom: 2px;
     text-indent: -5px;
     font-size: 0.875em;
