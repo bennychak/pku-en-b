@@ -1122,15 +1122,14 @@ body .borl0 {
   font-size: 0.875em;
 }
 .sidenav li a {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
 }
 .sidenav li:hover:before,
 .sidenav .active:before {
   content: '';
   position: absolute;
   left: 10px;
-  top: 10px;
+  top: 9px;
   width: 4px;
   height: 5px;
   font-size: 0;
@@ -1620,7 +1619,7 @@ body .borl0 {
   }
   .sidenav li:hover:before,
   .sidenav .active:before {
-    top: 15px;
+    top: 9px;
   }
   .sidenav .lst1 .lk {
     margin-top: 6px;
