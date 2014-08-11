@@ -142,6 +142,7 @@ input[type="radio"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  *behavior: url(/bower_components/box-sizing-polyfill/boxsizing.htc);
   padding: 0;
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -873,12 +874,14 @@ th {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  *behavior: url(/bower_components/box-sizing-polyfill/boxsizing.htc);
 }
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  *behavior: url(/bower_components/box-sizing-polyfill/boxsizing.htc);
 }
 html {
   font-size: 10px;
@@ -2500,6 +2503,7 @@ input[type="search"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  *behavior: url(/bower_components/box-sizing-polyfill/boxsizing.htc);
 }
 input[type="radio"],
 input[type="checkbox"] {

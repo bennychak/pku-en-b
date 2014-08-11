@@ -10,10 +10,12 @@
 // http://getbootstrap.com/getting-started/#third-box-sizing
 * {
   .box-sizing(border-box);
+  *behavior: url(/bower_components/box-sizing-polyfill/boxsizing.htc);
 }
 *:before,
 *:after {
   .box-sizing(border-box);
+  *behavior: url(/bower_components/box-sizing-polyfill/boxsizing.htc);
 }
 
 
