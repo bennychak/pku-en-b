@@ -534,19 +534,14 @@ body .borl0 {
   position: relative;
   overflow: hidden;
   float: left;
-  width: 32.6%;
-  margin-right: 1.1%;
+  width: 32.5%;
+  margin-right: 1.25%;
 }
 .m_slide .slide_group .item .lk {
   display: block;
 }
-.m_slide .slide_group .item:first-child .lk {
-  margin-left: 0;
-}
 .m_slide .slide_group .item:last-child {
-  margin-right: 0;
-}
-.m_slide .slide_group .item:last-child .lk {
+  float: right;
   margin-right: 0;
 }
 .m_slide .slide_group .item img {
