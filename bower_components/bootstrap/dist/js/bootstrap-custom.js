@@ -107,9 +107,9 @@ $(function(){
 	// $('.bttrlazyloading').bttrlazyloading();
 
 	// lazyload
-	$('img.lazy').lazyload({
-		effect : 'fadeIn'
-	});
+	//$('img.lazy').lazyload({
+	//	effect : 'fadeIn'
+	//});
 
 	// information
 	var $_info = $('.m_information .item');
