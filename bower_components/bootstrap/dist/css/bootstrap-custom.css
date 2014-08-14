@@ -452,13 +452,13 @@ body .borl0 {
 .m_logo .c2 a:visited {
   color: #000000;
 }
-.e_container_slide {
-  background: #ffffff;
-}
 .e_container_slide,
 .e_container_slide .container {
   padding-left: 0;
   padding-right: 0;
+}
+.e_container_slide {
+  background: #003670;
 }
 .m_slide .slide_big .pic .info,
 .m_slide .slide_group .item .info,
@@ -523,6 +523,7 @@ body .borl0 {
 }
 .m_slide .slide_group {
   overflow: hidden;
+  padding-bottom: 6px;
 }
 .m_slide .slide_group ul,
 .m_slide .slide_group li {
@@ -1261,9 +1262,6 @@ body .borl0 {
     background-position: center center;
     background-repeat: no-repeat;
   }
-  .e_container_slide {
-    background-color: #003670;
-  }
   .m_slide {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -1271,6 +1269,9 @@ body .borl0 {
     width: 520px;
     float: left;
     margin-bottom: 0;
+  }
+  .m_slide .slide_group {
+    padding-bottom: 0;
   }
   .m_slide .slide_group .item {
     float: none;
