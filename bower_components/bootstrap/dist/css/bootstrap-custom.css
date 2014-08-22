@@ -770,9 +770,15 @@ body .borl0 {
 .e_container_recommend {
   position: relative;
   background: #033872 url(../../assets/images/honeycomb.png) center center;
+  background: #033872\9;
   background-size: 26px 15px;
   border-top: #fff 41px solid;
   border-bottom: #368577 8px solid;
+}
+@-moz-document url-prefix() {
+  .e_container_recommend {
+    background: #033872;
+  }
 }
 .e_container_recommend .container {
   position: relative;
