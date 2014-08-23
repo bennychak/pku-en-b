@@ -849,35 +849,32 @@ body .borl0 {
   height: 50%;
   width: 100%;
 }
-.m_recommend .item .static {
-  position: absolute;
-  width: 57px;
-  left: 19px;
-  top: 0;
-  padding-top: 36px;
-}
-.m_recommend .item .static .tit {
-  font-size: 0.75em;
-}
-.m_recommend .item .static .msg {
-  display: none;
-  font-size: .75em;
-  font-family: Georgia,serif;
-  font-style: italic;
-}
 .m_recommend .item .dock-msg {
-  display: none;
-  opacity: 0;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.m_recommend .item .dock-msg .txt {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding-bottom: 20px;
+  bottom: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.m_recommend .item .dock-msg .tit {
+  font-size: 0.75em;
 }
 .m_recommend .item .dock-msg .msg {
   font-family: Georgia,serif;
@@ -1361,32 +1358,16 @@ body .borl0 {
     width: 190px;
     height: 164px;
   }
-  .m_recommend .item .static {
-    width: 120px;
-    left: 35px;
-    padding-top: 78px;
-  }
-  .m_recommend .item .static .tit {
-    font-size: 1em;
-  }
-  .m_recommend .item .static .msg {
-    display: block;
-    font-size: .75em;
-    opacity: 0.7;
-  }
-  .m_recommend .item .dock-msg {
-    display: block;
-    opacity: 0;
+  .m_recommend .item .dock-msg .txt {
+    left: 10%;
+    width: 80%;
+    padding-bottom: 5px;
   }
   .m_recommend .item .dock-msg .tit {
-    padding: 25px 0 10px;
     font-size: 0.9375em;
   }
   .m_recommend .item .dock-msg .msg {
-    font-size: 0.875em;
-  }
-  .m_recommend .item_bd:hover .dock-msg {
-    opacity: 1;
+    font-size: 0.75em;
   }
   .m_recommend .item .pcover {
     background-size: 382px 164px;
@@ -1411,19 +1392,28 @@ body .borl0 {
   .m_recommend .e_item_3 .pcover {
     background-position: -192px 0;
   }
-  .m_recommend .e_item_1 .item_bd .dock-msg {
+  .m_recommend .item_bd:hover .dock-msg .txt,
+  .m_recommend .item_bd_hover .dock-msg .txt {
+    bottom: 30px;
+  }
+  .m_recommend .e_item_1 .item_bd:hover .dock-msg,
+  .m_recommend .e_item_1 .item_bd_hover .dock-msg {
     background-color: #f2b75b;
   }
-  .m_recommend .e_item_2 .item_bd .dock-msg {
+  .m_recommend .e_item_2 .item_bd:hover .dock-msg,
+  .m_recommend .e_item_2 .item_bd_hover .dock-msg {
     background-color: #2d7aca;
   }
-  .m_recommend .e_item_3 .item_bd .dock-msg {
+  .m_recommend .e_item_3 .item_bd:hover .dock-msg,
+  .m_recommend .e_item_3 .item_bd_hover .dock-msg {
     background-color: #e06c00;
   }
-  .m_recommend .e_item_4 .item_bd .dock-msg {
+  .m_recommend .e_item_4 .item_bd:hover .dock-msg,
+  .m_recommend .e_item_4 .item_bd_hover .dock-msg {
     background-color: #6a9218;
   }
-  .m_recommend .e_item_5 .item_bd .dock-msg {
+  .m_recommend .e_item_5 .item_bd:hover .dock-msg,
+  .m_recommend .e_item_5 .item_bd_hover .dock-msg {
     background-color: #e06c00;
   }
   .m_banner img {

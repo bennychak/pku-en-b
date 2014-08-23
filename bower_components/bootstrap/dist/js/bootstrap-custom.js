@@ -63,6 +63,23 @@ function comHeight(){
 	});
 }
 
+// random num
+function load(minnum,maxnum){
+    var choice = maxnum - minnum + 1;
+    var a = Math.floor(Math.random()*choice + minnum);
+    return a;
+}
+
+// recommend
+function rec(){
+	var groups = ['0','1','2','3','4'];
+	var randNum = groups[load(0,groups.length - 1)];
+
+	$('.m_recommend .item_bd').removeClass('item_bd_hover');
+	$('.m_recommend .item:eq('+ randNum +') .item_bd').addClass('item_bd_hover');
+
+}
+
 function instantLoad(){
 	// responsive image
 	// fn_fitimg();
@@ -138,3 +155,6 @@ $(function(){
 	}
 
 });
+
+// recommend
+setInterval('rec()',3000);
