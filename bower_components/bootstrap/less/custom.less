@@ -379,9 +379,9 @@
 
 // msgDetail
 .msgDetail{}
-.msg_tit{ padding-top:25px; padding-bottom:15px; border-bottom:#ccc 1px solid; text-align:center;}
-.msg_tit h1{ font-size:1.125em; margin:0; padding:0; color:#003670}
-.msg_tit .sub{ margin-top:15px; font-size:.75em; color:#898989}
+.msgDetail .msg_tit{ padding-top:25px; padding-bottom:15px; border-bottom:#ccc 1px solid; text-align:center;}
+.msgDetail .msg_tit h1{ font-size:1.25em; margin:0; padding:0; color:#003670}
+.msgDetail .msg_tit .sub{ margin-top:15px; font-size:.75em; color:#898989}
 .msgDetail section{ padding-top:15px; padding-bottom:15px; line-height:2em; color:#464646; border-bottom:#dcdcdc 1px solid}
 .msgDetail section .con{ position:relative; padding:10px 0}
 .msgDetail section .bor{ display:none; position:absolute; top:0; bottom:0; right:-8px; width:1px; height:100%; font-size:0; overflow:hidden;}
@@ -396,6 +396,26 @@
 .msg_pic ul,
 .msg_pic li{ margin:0; padding:0; list-style:none}
 .msg_pic .item{ margin-bottom:25px}
+
+// msgSlide
+.msgSlide .msg_tit{ padding-top:25px; padding-bottom:15px;}
+.msgSlide .msg_tit h1{ font-size:1.25em; margin:0; padding:0; color:#003670}
+.msgSlide .msg_tit .sub{ margin-top:15px; font-size:.75em; color:#898989}
+.msgSlide section{ padding-top:15px; padding-bottom:15px; line-height:2em; color:#464646; border-bottom:#dcdcdc 1px solid}
+.msgSlide section .con{ position:relative; padding:10px 0}
+.msgSlide section .art p{ margin-bottom:20px}
+
+// msgGateways
+.msgGateways{}
+.msgGateways .sortList,
+.msgGateways .sortList li{ margin:0; padding:0; list-style:none}
+.msgGateways .sortList{ padding:0 0 20px 20px}
+.msgGateways .sortList .item{ margin-top:8px; font-size:.875em; padding-left:24px}
+.msgGateways .sortList .item:before{ position:absolute; content:'>'; margin-left:-24px}
+.msgGateways .tit{ color:#003670; font-size:1.25em}
+
+.gateways_item{ margin-top:40px}
+.gateways_item .c1{ border-bottom:#969696 1px solid}
 
 // middle-screen pad >=768px
 //------------------------------------------
@@ -640,6 +660,9 @@ body{}
 
 // msgList
 .msgList{ margin-top:15px; margin-bottom:45px}
+
+// msgGateways
+.gateways_item .c1{ min-height:200px}
 
 // sidenav
 .sidenav{}
